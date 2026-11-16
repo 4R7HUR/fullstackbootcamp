@@ -244,7 +244,7 @@ function start_learning_outcomes_quiz(
                 const dancing_gif = document.createElement("img");
 
                 dancing_gif.src =
-                    selected_celebration_gifs[random_gif_index];
+                    "/static/" + selected_celebration_gifs[random_gif_index];
 
                 dancing_gif.alt = "Dancing celebration";
                 dancing_gif.width = 100;

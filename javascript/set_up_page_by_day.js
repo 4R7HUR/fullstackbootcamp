@@ -4,67 +4,17 @@
 
 
 
-
-
-
-
-
 function get_day_from_url() {
 
-    const params = new URLSearchParams(window.location.search);
+    const pathname = window.location.pathname;
 
-    const day_value = Number(params.get("day"));
+    const match = pathname.match(/^\/day-(\d+)\/?$/);
 
-    const max_day =
-        bootcamp_start_stop_by_day.length;
-
-
-    if (
-        Number.isInteger(day_value) &&
-        day_value >= 1 &&
-        day_value <= max_day
-    ) {
-        return day_value;
+    if (match) {
+        return Number(match[1]);
     }
-
-
-    if (day_value < 1) {
-
-        window.location.href = "?day=1";
-
-        return 1;
-    }
-
-
-    if (day_value > max_day) {
-
-        window.location.href =
-            `?day=${max_day}`;
-
-        return max_day;
-    }
-
-
-    window.location.href = "?day=1";
 
     return 1;
-}
-
-
-function handle_day_navigation(event) {
-
-    if (event.key === "ArrowRight") {
-
-        window.location.href =
-            `?day=${day + 1}`;
-    }
-
-
-    if (event.key === "ArrowLeft") {
-
-        window.location.href =
-            `?day=${day - 1}`;
-    }
 }
 
 
@@ -514,7 +464,3 @@ console.log(bootcamp_content_for_day);
 
 update_lessons();   
 
-document.addEventListener(
-    "keydown",
-    handle_day_navigation
-);

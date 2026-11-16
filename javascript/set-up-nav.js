@@ -8,8 +8,7 @@
 
 const day_navigation = document.getElementById("day_navigation");
 
-const current_day = new URLSearchParams(window.location.search)
-    .get("day") || "1";
+const current_day = window.location.pathname.match(/^\/day-(\d+)\/?$/)?.[1] || "1";
 
 const individual_projects = [
     "Individual Formative Assignment: HTML, CSS, Bootstrap",
@@ -92,7 +91,7 @@ if (day_navigation) {
 
         const button = document.createElement("a");
 
-        button.href = `?day=${item.day}`;
+        button.href = `/day-${item.day}/`;
         button.textContent = item.day;
         button.className = "btn btn-sm";
 
