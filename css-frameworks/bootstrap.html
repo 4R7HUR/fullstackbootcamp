@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid Example</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Prism CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet">
+
+    <style>
+        /* START: Custom Colour Palette */
+        :root {
+            --colour-primary: #315b7d;
+            --colour-secondary: #64748b;
+            --colour-success: #39845a;
+            --colour-danger: #bd4545;
+            --colour-warning: #e5ad35;
+            --colour-info: #3999a5;
+            --colour-light: #f1f3f5;
+            --colour-dark: #273444;
+        }
+        /* STOP: Custom Colour Palette */
+
+
+        /* START: Custom Background Classes */
+        .bg-primary {
+            background-color: var(--colour-primary) !important;
+        }
+
+        .bg-secondary {
+            background-color: var(--colour-secondary) !important;
+        }
+
+        .bg-success {
+            background-color: var(--colour-success) !important;
+        }
+
+        .bg-danger {
+            background-color: var(--colour-danger) !important;
+        }
+
+        .bg-warning {
+            background-color: var(--colour-warning) !important;
+        }
+
+        .bg-info {
+            background-color: var(--colour-info) !important;
+        }
+
+        .bg-light {
+            background-color: var(--colour-light) !important;
+        }
+
+        .bg-dark {
+            background-color: var(--colour-dark) !important;
+        }
+        /* STOP: Custom Background Classes */
+
+
+        /* START: Modal Styling */
+
+        /* Control modal code font size */
+        #html_template_modal pre,
+        #html_template_modal code {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        #html_template_modal pre {
+            border-radius: 0;
+            margin: 0;
+        }
+
+        /* Modal close button */
+        #html_template_modal .btn-close {
+            filter: invert(1);
+            opacity: 1;
+            transform: scale(2);
+        }
+
+        /* STOP: Modal Styling */
+
+    </style>
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+
+    <!-- START: Header -->
+    <header class="bg-primary text-white p-4 text-center">
+        <h1 class="h2 mb-0">My Bootstrap Layout</h1>
+    </header>
+    <!-- STOP: Header -->
+
+
+    <!-- START: Main Content -->
+    <main class="container my-4 flex-grow-1">
+
+        <div class="row g-3">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-warning p-4 text-center rounded">
+                    <h2 class="h4">Div 1</h2>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-success text-white p-4 text-center rounded">
+                    <h2 class="h4">Div 2</h2>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-info p-4 text-center rounded">
+                    <h2 class="h4">Div 3</h2>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="bg-danger text-white p-4 text-center rounded">
+                    <h2 class="h4">Div 4</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- STOP: Main Content -->
+
+
+    <!-- START: Footer -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p class="mb-2">My Bootstrap Footer</p>
+        <a href="#html_template_modal" class="text-white" data-bs-toggle="modal">
+            View HTML body markup
+        </a>
+        |  <a href="tailwind.html"
+        class="text-white underline">
+        Tailwind example 
+    </a>
+    </footer>
+    <!-- STOP: Footer -->
+
+
+    <!-- START: HTML Template Modal -->
+    <div class="modal fade" id="html_template_modal" tabindex="-1">
+
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+
+            <div class="modal-content">
+
+                <!-- Close Button -->
+                <button type="button"
+                    class="btn-close position-absolute top-0 end-0 m-4"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    style="z-index: 10;">
+                </button>
+
+                <div class="modal-body p-0">
+                    <pre class="mb-0"><code id="html_template_code" class="language-html"></code></pre>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- STOP: HTML Template Modal -->
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Prism JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+
+    <script>
+
+        // Variables
+        let html_template = document.querySelector("main").outerHTML;
+        let html_template_code = document.getElementById("html_template_code");
+        let html_template_modal = document.getElementById("html_template_modal");
+
+
+        // Ready block
+        html_template_modal.addEventListener("show.bs.modal", function () {
+
+            // Insert the main HTML as text
+            html_template_code.textContent = html_template;
+
+            // Apply Prism syntax highlighting
+            Prism.highlightElement(html_template_code);
+
+        });
+
+    </script>
+
+</body>
+</html>

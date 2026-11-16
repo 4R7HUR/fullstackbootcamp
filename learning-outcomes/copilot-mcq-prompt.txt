@@ -1,0 +1,339 @@
+I want you to help me mature a JavaScript curriculum file by adding formative assessment content. So far we have stuggled with teh filowing prompt as the upload is large i am thinking of making smaller files like bootcamp_days_01-5_chatgpt.js 
+
+IMPORTANT
+
+Do not generate the enhanced file immediately.
+
+First read and understand all requirements below.
+
+Once you have understood them, stop and ask me to paste the JavaScript source code.
+
+Do not generate curriculum content until I have pasted the source code and explicitly instructed you to proceed.
+
+==================================================
+WORKFLOW
+==================================================
+
+STEP 1
+
+Ask me to paste the complete JavaScript source code.
+
+The source will begin with a variable similar to:
+
+let learning_outcomes_1_10 = {
+
+or
+
+let learning_outcomes_11_20 = {
+
+or
+
+let learning_outcomes_71_80 = {
+
+The variable name identifies the curriculum range.
+
+Examples:
+
+learning_outcomes_1_10
+→ bootcamp_days_01-10_chatgpt_copilot.js
+
+learning_outcomes_11_20
+→ bootcamp_days_11-20_chatgpt_copilot.js
+
+learning_outcomes_71_80
+→ bootcamp_days_71-80_chatgpt_copilot.js
+
+When responding, use wording similar to:
+
+"I understand the requirements.
+
+Please paste the complete contents of the JavaScript source file beginning with:
+
+let learning_outcomes_X_Y = {
+
+Once provided and when instructed to proceed, I will:
+
+• Determine the curriculum range from the variable name.
+• Generate the enhanced curriculum file.
+• Preserve all existing curriculum content.
+• Add MCQs to each objective.
+• Add unique question IDs.
+• Add answer-specific feedback.
+• Return the complete copy-paste-ready JavaScript."
+
+STEP 2
+
+Once the source code has been pasted, wait.
+
+Do not generate anything yet.
+
+Wait until I explicitly instruct you using wording such as:
+
+"Generate the enhanced file."
+
+or
+
+"Proceed."
+
+or
+
+"Create the copilot version."
+
+The source code may arrive in multiple messages.
+
+Continue accepting source code until I explicitly tell you to proceed.
+
+==================================================
+SOURCE OF TRUTH
+==================================================
+
+The pasted JavaScript source code is the source of truth.
+
+Preserve all curriculum content exactly as written.
+
+Do not:
+
+• remove content
+• rewrite content
+• paraphrase content
+• summarise content
+• reorder content
+• rename content
+
+unless a change is required to fix an obvious JavaScript syntax error.
+
+==================================================
+OBJECTIVE
+==================================================
+
+Create an enhanced version of the curriculum.
+
+The enhanced version should preserve the original curriculum while adding formative assessment functionality.
+
+The resulting file should conceptually be named:
+
+bootcamp_days_XX-YY_chatgpt_copilot.js
+
+where XX-YY is derived from the learning_outcomes_X_Y variable.
+
+==================================================
+CURRICULUM PHILOSOPHY
+==================================================
+
+Within this curriculum, each learning group contains:
+
+• an Aim
+• an Objective
+
+The Aim describes the broader learning intention.
+
+The Objective describes the specific assessable outcome.
+
+There is intentionally a one-to-one relationship between aims and objectives.
+
+Because the objective is the assessable element of the curriculum, all assessment content should be attached directly to the objective.
+
+Do not place MCQs at learning-group level.
+
+Place MCQs inside the objective object.
+
+The resulting structure should be:
+
+learning_group
+    └─ aim
+    └─ objective
+         └─ mcqs
+
+==================================================
+MCQ REQUIREMENTS
+==================================================
+
+Each objective should gain a property called:
+
+mcqs
+
+The property must always be an array.
+
+Generate one high-quality MCQ for each objective.
+
+Questions should assess understanding and application rather than simple memorisation.
+
+Avoid trick questions.
+
+Avoid ambiguous questions.
+
+The correct answer should be clearly correct.
+
+Incorrect answers should be plausible misconceptions.
+
+==================================================
+MCQ STRUCTURE
+==================================================
+
+Use this exact structure:
+
+objective: {
+    verb: "...",
+    text: "...",
+
+    mcqs: [
+        {
+            id: "D01-LG01-Q01",
+
+            question: "Question text",
+
+            options: [
+                {
+                    text: "Option A",
+                    correct: false,
+                    feedback: "Incorrect. Explanation specific to this answer."
+                },
+                {
+                    text: "Option B",
+                    correct: true,
+                    feedback: "Correct. Explanation specific to this answer."
+                },
+                {
+                    text: "Option C",
+                    correct: false,
+                    feedback: "Incorrect. Explanation specific to this answer."
+                },
+                {
+                    text: "Option D",
+                    correct: false,
+                    feedback: "Incorrect. Explanation specific to this answer."
+                }
+            ]
+        }
+    ]
+}
+
+==================================================
+ID REQUIREMENTS
+==================================================
+
+Each MCQ must have a unique ID.
+
+Format:
+
+D01-LG01-Q01
+
+Where:
+
+D = Day Number
+LG = Learning Group Number
+Q = Question Number
+
+Examples:
+
+D01-LG01-Q01
+D01-LG02-Q01
+D05-LG03-Q01
+D10-LG04-Q01
+
+==================================================
+CORRECTNESS RULES
+==================================================
+
+Use:
+
+correct: true
+
+or
+
+correct: false
+
+Never use:
+
+answer: 1
+
+correctAnswer: 2
+
+or any index-based answer system.
+
+==================================================
+FEEDBACK REQUIREMENTS
+==================================================
+
+Every answer option must contain feedback.
+
+Correct answers must begin with:
+
+Correct.
+
+Incorrect answers must begin with:
+
+Incorrect.
+
+Feedback should explain why that specific answer is correct or incorrect.
+
+Feedback should reinforce understanding and address misconceptions where appropriate.
+
+Do not use:
+
+Not Quite
+Almost
+Try Again
+Close
+
+==================================================
+PRESERVATION RULES
+==================================================
+
+Retain all existing:
+
+• days
+• titles
+• learning groups
+• working titles
+• challenges
+• aims
+• objectives
+• properties
+• curriculum content
+
+Only add assessment functionality.
+
+==================================================
+OUTPUT REQUIREMENTS
+==================================================
+
+When instructed to generate:
+
+Produce the complete enhanced JavaScript file.
+
+Output the entire file as copy-paste-ready JavaScript.
+
+Do not provide snippets.
+
+Do not provide examples.
+
+Do not omit sections for brevity.
+
+Do not use placeholders.
+
+Return the complete file from first line to last line.
+
+The output must be immediately usable after copy-pasting into a .js file.
+
+If the completed file cannot fit in a single response, automatically continue producing subsequent parts until the entire file has been generated.
+
+==================================================
+QUALITY CHECK
+==================================================
+
+Before producing the final output verify:
+
+1. All original curriculum content remains present.
+2. Every objective has one MCQ.
+3. Every MCQ has a unique ID.
+4. Every MCQ has four options.
+5. Exactly one option is marked correct.
+6. Every option contains feedback.
+7. Correct feedback begins with "Correct."
+8. Incorrect feedback begins with "Incorrect."
+9. The JavaScript is syntactically valid.
+10. The file is complete and copy-paste ready.
+11. No curriculum content has been removed.
+12. The curriculum range has been correctly derived from the root variable name.
+13. Every MCQ is stored inside its corresponding objective object.

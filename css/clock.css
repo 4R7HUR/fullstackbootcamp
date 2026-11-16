@@ -1,0 +1,75 @@
+
+/* START: Daily Schedule Clock */
+
+#daily_schedule_clock svg {
+    max-width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+#daily_schedule_clock .digital_time {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0 1.5rem;
+}
+
+#daily_schedule_clock .break_schedule {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#daily_schedule_clock .break_item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-width: 150px;
+}
+
+#daily_schedule_clock .morning_break {
+    background-color: #66BB6A;
+    color: #102b12;
+}
+
+#daily_schedule_clock .lunch_break {
+    background-color: #FFD54F;
+    color: #332900;
+}
+
+#daily_schedule_clock .afternoon_break {
+    background-color: #64B5F6;
+    color: #082b49;
+}
+
+#daily_schedule_clock .break_item h3 {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+}
+
+#daily_schedule_clock .break_item p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Active break ring */
+
+#daily_schedule_clock .active_break_ring {
+    fill: none;
+    stroke-width: 8;
+    pointer-events: none;
+}
+
+#daily_schedule_clock .active_morning_break {
+    stroke: #2E9B45;
+}
+
+#daily_schedule_clock .active_lunch {
+    stroke: #E0A800;
+}
+
+#daily_schedule_clock .active_afternoon_break {
+    stroke: #1685D1;
+}
+
+/* STOP: Daily Schedule Clock */

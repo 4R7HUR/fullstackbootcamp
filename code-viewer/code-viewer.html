@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Viewer - HTML | CSS | JS</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Prism.js: syntax highlighting -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="page-banner bg-primary text-white">
+        <h1 class="h3 mb-0">HTML and CSS Viewer</h1>
+    </header>
+
+    <nav id="example_navigation" class="p-2 bg-light border-bottom"></nav>
+
+    <main class="page-content">
+
+        <section class="content-column border-end fs-3 p-5">
+
+            <div id="h1" class="example-code d-none">
+                <h1 style="color:red">Hello World</h1>
+            </div>
+
+            <div id="h2" class="example-code d-none">
+
+                <style>
+                    h2 {
+                        color: gray;
+                        background-color: lightgrey;
+                        border: 3px solid grey;
+                        text-align: center;
+                    }
+                </style>
+
+                <h2>Hello World</h2>
+
+            </div>
+
+            <div id="h3" class="example-code d-none">
+
+                <style>
+                    h3 {
+                        width: 300px;
+                        padding: 20px;
+                        border: 5px solid blue;                        
+                        background-color: red;
+                    }
+                    h3 div {background-color:yellow; width:100%}
+                </style>
+                
+                <h3><div>Hello World</div></h3>
+                
+
+            </div>
+
+            <div id="ul" class="example-code d-none">
+                <style>
+                    ul {list-style-type: {{list-style-type}};}
+                    ul li {color:{{colour}}}
+                    ul li:nth-child(2) {background-color:yellow;}
+                    
+                </style>
+                
+                <ul>
+                    <li>Strawberry</li>
+                    <li>Raspberry</li>
+                    <li>Blueberry</li>
+                </ul>
+            </div>
+
+            <div id="strong" class="example-code d-none">
+
+                <style>
+                    strong{font-size: 60px;}
+                    .red {color:red; font-weight: 100;}
+
+                </style>
+
+                <strong class="red">I'm strong but not bold!</strong>
+                <br>
+                <strong>I'm strong but without class</strong>         
+                
+
+            </div>
+
+            <div id="table" class="example-code d-none">
+
+                <table class="table table-bordered">
+                    <thead class="{{table-colour}}">
+                        <tr>
+                            <th>Country</th>
+                            <th>Language</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>China</td>
+                            <td>Mandarin (850 million), Wu (95 million), Yue / Cantonese (80 million), Jin (70 million),
+                                Min (60 million), Hakka (55 million), Xiang (50 million), Gan (30 million)</td>
+                        </tr>
+
+                        <tr>
+                            <td>Canada</td>
+                            <td>English (31.6 million), French (10.6 million), Spanish (1.2 million), Mandarin
+                                (987,000), Punjabi (942,000), Arabic (838,000), Hindi (761,000), Tagalog (738,000),
+                                Cantonese (725,000), Italian (548,000).</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+
+
+
+            <div id="button" class="example-code d-none">
+
+                
+                <style>
+                    span .btn-primary {font-size: 200px;}
+
+                </style>
+
+                <span>
+                    <button class="btn btn-primary mx-3">Click Me</button>
+                </span>
+
+                
+            
+            </div>
+
+
+            <div id="span" class="example-code d-none">
+
+                <style>
+                    p {color:green}
+                </style>
+
+                <span style="color:red;">Hello World</span>
+
+            </div>
+
+            <div id="p" class="example-code d-none">
+
+                <style>
+                    p {color:green!important}
+                </style>
+
+                <p style="color:red;">Hello World</p>
+
+            </div>
+
+
+
+
+            <div id="blockquote" class="example-code d-none">
+
+                <style>
+                    #wwf {color:darkblue}
+                    blockquote {color:green}
+                </style>
+
+                <blockquote id="wwf">For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</blockquote>
+
+            </div>
+
+
+            <div id="em" class="example-code d-none">
+
+                <style>
+                    #howdy {color:red}
+                    .howdy {color:blue;font-size: 60px;}
+                    em {color:green; background-color: yellow}
+                    p em {border-bottom: 10px solid red;}
+
+                </style>
+
+                <p>I want to say, <em id="howdy" class="howdy">Hello World</em></p>
+                <em class="howdy">and hello again</em>
+                
+
+            </div>
+
+
+
+
+
+            <!-- START: Teaching point -->
+            <div id="teaching_point_view" class="d-none p-4">
+
+                <h2>Teaching Point</h2>
+
+                <p id="teaching_point_text"></p>
+
+            </div>
+            <!-- STOP: Teaching point -->
+
+
+
+
+
+        </section>
+
+        <section class="content-column fs-3">
+            
+            <pre class="code-window" style="margin:0; border-radius: 0;"><code id="code_preview" class="language-html"></code></pre>
+
+
+        </section>
+
+    </main>
+
+    <footer class="page-footer bg-dark text-white text-center p-3">
+        HTML and CSS Viewer
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

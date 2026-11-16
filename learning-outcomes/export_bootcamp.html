@@ -1,0 +1,866 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootcamp Course Export</title>
+
+    <style>
+        /* =========================================================
+           Page
+           ========================================================= */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+            color: #222;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+
+        .summary {
+            background: #f1f1f1;
+            padding: 14px;
+            margin: 16px 0;
+            line-height: 1.7;
+        }
+
+        #status {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .error {
+            color: #b00020;
+        }
+
+        /* =========================================================
+           Table
+           ========================================================= */
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1100px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #e8e8e8;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        .day-cell {
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .number-cell {
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        /* =========================================================
+           Challenge Code Display
+           ========================================================= */
+
+        .challenge-cell {
+            min-width: 200px;
+            max-width: 350px;
+            padding: 0;
+            background: #1e1e1e;
+        }
+
+        .challenge-code {
+            margin: 0;
+            padding: 16px;
+            overflow-x: auto;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            font-family: "Consolas", "Monaco", monospace;
+            font-size: 13px;
+            line-height: 1.7;
+            white-space: pre;
+            tab-size: 4;
+        }
+
+        /* JSON syntax colours */
+
+        .json-key {
+            color: #9cdcfe;
+        }
+
+        .json-string {
+            color: #ce9178;
+        }
+
+        .json-number {
+            color: #b5cea8;
+        }
+
+        .json-boolean,
+        .json-null {
+            color: #569cd6;
+        }
+
+        .json-bracket {
+            color: #d4d4d4;
+        }
+
+        /* =========================================================
+           JSON Output
+           ========================================================= */
+
+        #json_container {
+            margin-top: 24px;
+        }
+
+        #json_output {
+            padding: 16px;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            font-family: "Consolas", "Monaco", monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            white-space: pre;
+            overflow: auto;
+            max-height: 700px;
+        }
+
+        /* =========================================================
+           Batch Downloads
+           ========================================================= */
+
+        #batch_downloads {
+            margin: 16px 0;
+            padding: 16px;
+            background: #f1f1f1;
+        }
+
+        #batch_downloads h2 {
+            margin-top: 0;
+        }
+
+        .batch-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 14px;
+            background: #fff;
+            border: 1px solid #aaa;
+            color: #222;
+            text-decoration: none;
+        }
+
+        .batch-link:hover {
+            background: #e8e8e8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bootcamp Course Export</h1>
+
+    <p>
+        Complete course content organised by day, section,
+        lesson and challenge.
+    </p>
+
+    <div class="toolbar">
+        <button id="copy_json_button" disabled>
+            Copy Complete JSON
+        </button>
+
+        <button id="download_json_button" disabled>
+            Download Complete JSON
+        </button>
+
+        <button id="download_batches_button" disabled>
+            Download Batches
+        </button>
+
+        <button id="show_json_button" disabled>
+            Show JSON on Page
+        </button>
+    </div>
+
+    <div id="summary" class="summary">
+        Loading course data...
+    </div>
+
+    <div id="status">Preparing export...</div>
+
+    <div id="batch_downloads" hidden>
+        <h2>Download 10-Day Batches</h2>
+        <p>
+            Select each batch to download its JSON file.
+            Each file contains up to 10 days.
+        </p>
+        <div id="batch_links"></div>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Day Title</th>
+                    <th>Section No.</th>
+                    <th>Section Title</th>
+                    <th>Lesson No.</th>
+                    <th>Lesson Title</th>
+                    <th>Challenge Count</th>
+                    <th>Challenge Content</th>
+                </tr>
+            </thead>
+
+            <tbody id="export_table"></tbody>
+        </table>
+    </div>
+
+    <div id="json_container" hidden>
+        <h2>Complete Course JSON</h2>
+        <pre id="json_output"></pre>
+    </div>
+
+    <!-- =========================================================
+         Source Data
+         ========================================================= -->
+
+    <script src="../bootcamp_start_stop_by_day_manual_edits.js"></script>
+    <script src="../bootcamp_content.js"></script>
+
+    <script>
+        // =========================================================
+        // Variables
+        // =========================================================
+
+        let export_data = null;
+        let json_export = "";
+
+        const BATCH_SIZE = 10;
+
+        const export_table =
+            document.getElementById("export_table");
+
+        const summary =
+            document.getElementById("summary");
+
+        const status =
+            document.getElementById("status");
+
+        const json_container =
+            document.getElementById("json_container");
+
+        const json_output =
+            document.getElementById("json_output");
+
+        const copy_json_button =
+            document.getElementById("copy_json_button");
+
+        const download_json_button =
+            document.getElementById("download_json_button");
+
+        const download_batches_button =
+            document.getElementById("download_batches_button");
+
+        const show_json_button =
+            document.getElementById("show_json_button");
+
+        const batch_downloads =
+            document.getElementById("batch_downloads");
+
+        const batch_links =
+            document.getElementById("batch_links");
+
+        // =========================================================
+        // Functions
+        // =========================================================
+
+        function find_section_index(section_title) {
+            return bootcamp_content.sections.findIndex(
+                section => section.title === section_title
+            );
+        }
+
+        function find_lesson_index(section, lesson_title) {
+            return section.lessons.findIndex(
+                lesson => lesson.title === lesson_title
+            );
+        }
+
+        function get_day_content(day_definition) {
+            const sections = bootcamp_content.sections;
+
+            const start_section_index =
+                find_section_index(day_definition.start_section);
+
+            const end_section_index =
+                find_section_index(day_definition.end_section);
+
+            if (
+                start_section_index === -1 ||
+                end_section_index === -1
+            ) {
+                throw new Error(
+                    "Section boundary not found for day " +
+                    day_definition.day +
+                    ". Start: " + day_definition.start_section +
+                    ". End: " + day_definition.end_section
+                );
+            }
+
+            if (start_section_index > end_section_index) {
+                throw new Error(
+                    "Start section comes after end section for day " +
+                    day_definition.day
+                );
+            }
+
+            const start_section = sections[start_section_index];
+            const end_section = sections[end_section_index];
+
+            const start_lesson_index = find_lesson_index(
+                start_section,
+                day_definition.start_lesson
+            );
+
+            const end_lesson_index = find_lesson_index(
+                end_section,
+                day_definition.end_lesson
+            );
+
+            if (
+                start_lesson_index === -1 ||
+                end_lesson_index === -1
+            ) {
+                throw new Error(
+                    "Lesson boundary not found for day " +
+                    day_definition.day +
+                    ". Start lesson: " +
+                    day_definition.start_lesson +
+                    ". End lesson: " +
+                    day_definition.end_lesson
+                );
+            }
+
+            if (
+                start_section_index === end_section_index &&
+                start_lesson_index > end_lesson_index
+            ) {
+                throw new Error(
+                    "Start lesson comes after end lesson for day " +
+                    day_definition.day
+                );
+            }
+
+            const exported_sections = [];
+
+            for (
+                let section_index = start_section_index;
+                section_index <= end_section_index;
+                section_index++
+            ) {
+                const section = sections[section_index];
+
+                let first_lesson_index = 0;
+                let last_lesson_index =
+                    section.lessons.length - 1;
+
+                if (section_index === start_section_index) {
+                    first_lesson_index = start_lesson_index;
+                }
+
+                if (section_index === end_section_index) {
+                    last_lesson_index = end_lesson_index;
+                }
+
+                const exported_lessons = [];
+
+                for (
+                    let lesson_index = first_lesson_index;
+                    lesson_index <= last_lesson_index;
+                    lesson_index++
+                ) {
+                    const lesson = section.lessons[lesson_index];
+
+                    exported_lessons.push({
+                        number: lesson.number,
+                        title: lesson.title,
+                        challenges: lesson.challenges
+                    });
+                }
+
+                exported_sections.push({
+                    number: section.number,
+                    title: section.title,
+                    lessons: exported_lessons
+                });
+            }
+
+            return {
+                day: day_definition.day,
+                title:
+                    day_definition.day_title ??
+                    day_definition.title ??
+                    "",
+                boundaries: {
+                    start_section: day_definition.start_section,
+                    start_lesson: day_definition.start_lesson,
+                    end_section: day_definition.end_section,
+                    end_lesson: day_definition.end_lesson
+                },
+                sections: exported_sections
+            };
+        }
+
+        function count_lessons(day) {
+            return day.sections.reduce(
+                (total, section) =>
+                    total + section.lessons.length,
+                0
+            );
+        }
+
+        function count_challenges(day) {
+            return day.sections.reduce(
+                (section_total, section) =>
+                    section_total +
+                    section.lessons.reduce(
+                        (lesson_total, lesson) =>
+                            lesson_total +
+                            (
+                                Array.isArray(lesson.challenges)
+                                    ? lesson.challenges.length
+                                    : 0
+                            ),
+                        0
+                    ),
+                0
+            );
+        }
+
+        function add_table_cell(row, value, class_name = "") {
+            const cell = document.createElement("td");
+
+            cell.textContent = value ?? "";
+
+            if (class_name) {
+                cell.className = class_name;
+            }
+
+            row.appendChild(cell);
+
+            return cell;
+        }
+
+        function highlight_json(json_string) {
+            const escaped_json = json_string
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
+
+            return escaped_json.replace(
+                /("(?:\\u[a-fA-F0-9]{4}|\\[^u]|[^\\"])*"(?:\s*:)?|\btrue\b|\bfalse\b|\bnull\b|-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?|[{}[\],:])/g,
+                function (match) {
+                    let class_name = "json-bracket";
+
+                    if (/^".*":$/.test(match)) {
+                        class_name = "json-key";
+                    } else if (match.startsWith('"')) {
+                        class_name = "json-string";
+                    } else if (
+                        match === "true" ||
+                        match === "false"
+                    ) {
+                        class_name = "json-boolean";
+                    } else if (match === "null") {
+                        class_name = "json-null";
+                    } else if (/^-?\d/.test(match)) {
+                        class_name = "json-number";
+                    }
+
+                    return '<span class="' + class_name + '">' +
+                        match +
+                        '</span>';
+                }
+            );
+        }
+
+        function add_table_row(day, section, lesson) {
+            const row = document.createElement("tr");
+
+            add_table_cell(row, day.day, "day-cell");
+            add_table_cell(row, day.title);
+            add_table_cell(row, section.number, "number-cell");
+            add_table_cell(row, section.title);
+            add_table_cell(row, lesson.number, "number-cell");
+            add_table_cell(row, lesson.title);
+
+            const challenges = Array.isArray(lesson.challenges)
+                ? lesson.challenges
+                : [];
+
+            add_table_cell(
+                row,
+                challenges.length,
+                "number-cell"
+            );
+
+            const challenge_cell =
+                add_table_cell(row, "", "challenge-cell");
+
+            const challenge_pre = document.createElement("pre");
+
+            challenge_pre.className = "challenge-code";
+
+            if (challenges.length) {
+                challenge_pre.innerHTML = highlight_json(
+                    JSON.stringify(challenges, null, 4)
+                );
+            } else {
+                challenge_pre.textContent =
+                    "(No challenges recorded)";
+            }
+
+            challenge_cell.appendChild(challenge_pre);
+            export_table.appendChild(row);
+        }
+
+        function render_table() {
+            export_table.replaceChildren();
+
+            for (const day of export_data.days) {
+                for (const section of day.sections) {
+                    for (const lesson of section.lessons) {
+                        add_table_row(day, section, lesson);
+                    }
+                }
+            }
+        }
+
+        function render_summary() {
+            const total_sections = export_data.days.reduce(
+                (total, day) => total + day.sections.length,
+                0
+            );
+
+            const total_lessons = export_data.days.reduce(
+                (total, day) => total + count_lessons(day),
+                0
+            );
+
+            const total_challenges = export_data.days.reduce(
+                (total, day) => total + count_challenges(day),
+                0
+            );
+
+            summary.textContent =
+                "Days: " + export_data.days.length +
+                " | Sections: " + total_sections +
+                " | Lessons: " + total_lessons +
+                " | Challenges: " + total_challenges;
+        }
+
+        function download_json_file(data, filename) {
+            const json_string = JSON.stringify(data, null, 2);
+
+            const blob = new Blob(
+                [json_string],
+                { type: "application/json" }
+            );
+
+            const download_url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+
+            link.href = download_url;
+            link.download = filename;
+
+            document.body.appendChild(link);
+            link.click();
+            link.remove();
+
+            // Delay revocation so the browser can begin the download.
+            setTimeout(
+                () => URL.revokeObjectURL(download_url),
+                1000
+            );
+        }
+
+        function get_day_number(day, fallback_number) {
+            const number = Number(day.day);
+
+            return Number.isFinite(number)
+                ? number
+                : fallback_number;
+        }
+
+        function create_batch_downloads() {
+            batch_links.replaceChildren();
+
+            const days = export_data.days;
+
+            for (
+                let start_index = 0;
+                start_index < days.length;
+                start_index += BATCH_SIZE
+            ) {
+                const batch_days = days.slice(
+                    start_index,
+                    start_index + BATCH_SIZE
+                );
+
+                const first_day_number = get_day_number(
+                    batch_days[0],
+                    start_index + 1
+                );
+
+                const last_day_number = get_day_number(
+                    batch_days[batch_days.length - 1],
+                    start_index + batch_days.length
+                );
+
+                const padded_start = String(first_day_number)
+                    .padStart(2, "0");
+
+                const padded_end = String(last_day_number)
+                    .padStart(2, "0");
+
+                const filename =
+                    "bootcamp_days_" +
+                    padded_start +
+                    "-" +
+                    padded_end +
+                    ".json";
+
+                const batch_data = {
+                    days: batch_days
+                };
+
+                const link = document.createElement("a");
+
+                link.href = URL.createObjectURL(
+                    new Blob(
+                        [JSON.stringify(batch_data, null, 2)],
+                        { type: "application/json" }
+                    )
+                );
+
+                link.download = filename;
+                link.className = "batch-link";
+                link.textContent =
+                    "Download days " +
+                    first_day_number +
+                    "–" +
+                    last_day_number;
+
+                link.addEventListener("click", function () {
+                    status.textContent =
+                        "Download requested: " + filename;
+                    status.className = "";
+                });
+
+                batch_links.appendChild(link);
+            }
+
+            batch_downloads.hidden = false;
+        }
+
+        function export_course() {
+            if (
+                typeof bootcamp_start_stop_by_day === "undefined"
+            ) {
+                throw new Error(
+                    "Could not load bootcamp_start_stop_by_day. " +
+                    "Check the source file path and filename."
+                );
+            }
+
+            if (
+                typeof bootcamp_content === "undefined" ||
+                !Array.isArray(bootcamp_content.sections)
+            ) {
+                throw new Error(
+                    "Could not load bootcamp_content.sections. " +
+                    "Check the source file path and filename."
+                );
+            }
+
+            if (!Array.isArray(bootcamp_start_stop_by_day)) {
+                throw new Error(
+                    "Day definitions must be an array."
+                );
+            }
+
+            const exported_days = [];
+
+            for (const day_definition of bootcamp_start_stop_by_day) {
+                exported_days.push(
+                    get_day_content(day_definition)
+                );
+            }
+
+            export_data = {
+                days: exported_days
+            };
+
+            json_export = JSON.stringify(export_data, null, 2);
+
+            render_table();
+            render_summary();
+
+            copy_json_button.disabled = false;
+            download_json_button.disabled = false;
+            download_batches_button.disabled = false;
+            show_json_button.disabled = false;
+
+            status.textContent = "Export completed successfully.";
+            status.className = "";
+
+            console.group("BOOTCAMP COURSE EXPORT");
+
+            console.log("Days:", export_data.days.length);
+
+            console.log(
+                "Sections:",
+                export_data.days.reduce(
+                    (total, day) => total + day.sections.length,
+                    0
+                )
+            );
+
+            console.log(
+                "Lessons:",
+                export_data.days.reduce(
+                    (total, day) => total + count_lessons(day),
+                    0
+                )
+            );
+
+            console.log(
+                "Challenges:",
+                export_data.days.reduce(
+                    (total, day) => total + count_challenges(day),
+                    0
+                )
+            );
+
+            console.log("Complete course object:", export_data);
+            console.log("Complete course JSON:\n" + json_export);
+
+            console.groupEnd();
+        }
+
+        // =========================================================
+        // Button Events
+        // =========================================================
+
+        copy_json_button.addEventListener("click", async function () {
+            try {
+                await navigator.clipboard.writeText(json_export);
+
+                status.textContent =
+                    "Complete course JSON copied to clipboard.";
+                status.className = "";
+            } catch (error) {
+                status.textContent =
+                    "Clipboard access failed. Use Download JSON instead.";
+                status.className = "error";
+
+                console.error("Clipboard copy failed:", error);
+            }
+        });
+
+        download_json_button.addEventListener("click", function () {
+            download_json_file(
+                export_data,
+                "bootcamp_course.json"
+            );
+
+            status.textContent =
+                "Download requested: bootcamp_course.json";
+            status.className = "";
+        });
+
+        download_batches_button.addEventListener(
+            "click",
+            function () {
+                create_batch_downloads();
+
+                status.textContent =
+                    "Choose a batch below to download its JSON file.";
+                status.className = "";
+
+                batch_downloads.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        );
+
+        show_json_button.addEventListener("click", function () {
+            json_container.hidden = !json_container.hidden;
+
+            if (!json_container.hidden) {
+                json_output.innerHTML = highlight_json(json_export);
+            }
+        });
+
+        // =========================================================
+        // Ready Block
+        // =========================================================
+
+        console.log("Starting bootcamp course export...");
+
+        try {
+            export_course();
+        } catch (error) {
+            status.textContent = "EXPORT FAILED: " + error.message;
+            status.className = "error";
+
+            console.error("BOOTCAMP EXPORT FAILED:", error);
+        }
+    </script>
+
+</body>
+
+</html>

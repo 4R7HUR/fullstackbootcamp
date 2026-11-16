@@ -1,0 +1,1114 @@
+{
+  "days": [
+    {
+      "day": "1",
+      "title": "Programming Paradigms",
+      "boundaries": {
+        "start_section": "Programming Paradigms",
+        "start_lesson": "Module Introduction",
+        "end_section": "Introduction to Ethics in AI",
+        "end_lesson": "End of module feedback"
+      },
+      "sections": [
+        {
+          "number": 1,
+          "title": "Programming Paradigms",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Module Introduction",
+              "challenges": [
+                "Welcome"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "What Happens In a Restaurant - Comparing Paradigms",
+              "challenges": [
+                "Comparing Declarative And Imperative Paradigms"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Make it So - Declarative Programming",
+              "challenges": [
+                "Declarative Programming Overview"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "The Nitty Gritty - Imperative Programming",
+              "challenges": [
+                "Imperative Programming",
+                "Structured Programming",
+                "Procedural Programming",
+                "Object Oriented Programming",
+                "Event Driven Programming"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Module Conclusion",
+              "challenges": [
+                "Conclusion"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "title": "Introduction to Generative AI",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Getting Set up",
+              "challenges": [
+                "Welcome",
+                "Activating Your Account and first prompt",
+                "End of Lesson Challenge",
+                "Quiz"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "title": "Introduction to Ethics in AI",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction",
+              "challenges": [
+                "Introduction to Ethics in AI",
+                "Ethical Dilemmas and Decision-Making in AI",
+                "Uncovering Bias in AI",
+                "Responsible Use and Disclosure of AI",
+                "An Ethics Committee",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "2",
+      "title": "HTML Essentials",
+      "boundaries": {
+        "start_section": "HTML Essentials",
+        "start_lesson": "Module Introduction",
+        "end_section": "HTML Essentials",
+        "end_lesson": "Lists"
+      },
+      "sections": [
+        {
+          "number": 4,
+          "title": "HTML Essentials",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Module Introduction",
+              "challenges": [
+                "Welcome"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Welcome To The Course",
+              "challenges": [
+                "Introduction to the Playground",
+                "Hints and Tips for Completing Our Coding Challenges"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "World Wide Web",
+              "challenges": [
+                "World Wide Web"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "HTML Document",
+              "challenges": [
+                "Anatomy of a Web Page",
+                "HTML Structure - First Look",
+                "Playground - First Look",
+                "Runnable Example - First Look",
+                "HTML First Look Challenge",
+                "DOCTYPE",
+                "Runnable Example - DOCTYPE",
+                "DOCTYPE Challenge"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "HTML Structural Elements",
+              "challenges": [
+                "Common HTML Elements",
+                "The html Element",
+                "Runnable Example - The html Element",
+                "The html Element Challenge",
+                "The head Element",
+                "Playground - head",
+                "Coders Coffeehouse - head",
+                "The head Element Challenge"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "HTML Content Elements",
+              "challenges": [
+                "The body Element",
+                "Playground - body",
+                "Coders Coffeehouse - body",
+                "The body Element Challenge",
+                "Tag",
+                "Playground - Tag",
+                "Runnable Example - Tag",
+                "Tag Challenge",
+                "Elements",
+                "Playground - Elements",
+                "Coders Coffeehouse - Elements",
+                "Elements Challenge"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "Text Elements",
+              "challenges": [
+                "HTML Text Elements",
+                "Headings",
+                "Playground - Headings",
+                "Coders Coffeehouse - Headings",
+                "Headings Challenge",
+                "Headings Bonus Challenge",
+                "Paragraphs",
+                "Playground - Paragraphs",
+                "Coders Coffeehouse - Paragraphs",
+                "Paragraphs Challenge",
+                "Paragraphs Bonus Challenge"
+              ]
+            },
+            {
+              "number": 9,
+              "title": "Divs and spans",
+              "challenges": [
+                "Divs and Spans",
+                "The div Element",
+                "Playground - Div",
+                "Coders Coffeehouse - Div",
+                "Div Challenge",
+                "Block Level Element",
+                "The span Element",
+                "Playground - Span",
+                "Coders Coffeehouse - Span",
+                "Span Challenge",
+                "General Divs and Spans Challenge",
+                "General Divs and Spans Bonus Challenge"
+              ]
+            },
+            {
+              "number": 10,
+              "title": "Comments",
+              "challenges": [
+                "Comments",
+                "Playground - Comments",
+                "Runnable Example - Comments",
+                "Single Line Comments Challenge",
+                "Multi-Line Comments Challenge"
+              ]
+            },
+            {
+              "number": 11,
+              "title": "Attributes",
+              "challenges": [
+                "Attributes",
+                "Playground - Attribute",
+                "Coders Coffeehouse - Attribute",
+                "Attribute Challenge",
+                "Classes",
+                "Playground - Classes",
+                "Coders Coffeehouse - Classes",
+                "Classes Challenge",
+                "ID",
+                "Playground - ID",
+                "Coders Coffeehouse - ID",
+                "ID Challenge"
+              ]
+            },
+            {
+              "number": 12,
+              "title": "Links",
+              "challenges": [
+                "Anchor",
+                "External links",
+                "Playground - External links",
+                "Coders Coffeehouse - External links",
+                "External Links Challenge",
+                "Internal links",
+                "Playground - Internal links",
+                "Coders Coffeehouse - Internal links",
+                "Internal Links Challenge"
+              ]
+            },
+            {
+              "number": 13,
+              "title": "Lists",
+              "challenges": [
+                "Lists",
+                "Ordered List",
+                "Playground - Ordered List",
+                "Coders Coffeehouse - Ordered List",
+                "Ordered List Challenge",
+                "Unordered List",
+                "Playground - Unordered List",
+                "Coders Coffeehouse - Unordered List",
+                "Unordered List Challenge",
+                "Nested Lists",
+                "Playground - Nested Lists",
+                "Coders Coffeehouse - Nested List",
+                "Nested Lists Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "3",
+      "title": "HTML Essentials",
+      "boundaries": {
+        "start_section": "HTML Essentials",
+        "start_lesson": "Tables",
+        "end_section": "HTML Essentials",
+        "end_lesson": "Checkbox and Radio Inputs"
+      },
+      "sections": [
+        {
+          "number": 4,
+          "title": "HTML Essentials",
+          "lessons": [
+            {
+              "number": 14,
+              "title": "Tables",
+              "challenges": [
+                "HTML Tables",
+                "Playground - HTML Tables",
+                "Coders Coffeehouse - HTML Tables",
+                "HTML Tables Challenge"
+              ]
+            },
+            {
+              "number": 15,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 16,
+              "title": "Forms",
+              "challenges": [
+                "Forms",
+                "The form Element",
+                "Playground - Form",
+                "Coders Coffeehouse - Form",
+                "The form Element Challenge",
+                "Form Attributes",
+                "Playground - Form Attributes",
+                "Coders Coffeehouse - Form Attributes",
+                "Form Attributes Challenge",
+                "HTTP",
+                "HTTP Challenge"
+              ]
+            },
+            {
+              "number": 17,
+              "title": "Form Description",
+              "challenges": [
+                "Form Structure",
+                "Playground - Form Structure",
+                "Coders Coffeehouse - Form Structure",
+                "Form Structure Challenge",
+                "Form Label",
+                "Playground - Form Label",
+                "Coders Coffeehouse - Form Label",
+                "Form Label Challenge"
+              ]
+            },
+            {
+              "number": 18,
+              "title": "Form Inputs",
+              "challenges": [
+                "Input Field",
+                "Playground - Input Field",
+                "Coders Coffeehouse - Input Field",
+                "Input Field Challenge",
+                "More Input Types",
+                "More Input Types Challenge",
+                "The textarea Element",
+                "Playground - textarea",
+                "Coders Coffeehouse - textarea",
+                "The textarea Challenge"
+              ]
+            },
+            {
+              "number": 19,
+              "title": "Checkbox and Radio Inputs",
+              "challenges": [
+                "Checkbox",
+                "Playground - Checkbox",
+                "Coders Coffeehouse - Checkbox",
+                "Checkbox Challenge",
+                "Radio Button",
+                "Playground - Radio Button",
+                "Coders Coffeehouse - Radio Button",
+                "Radio Button Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "4",
+      "title": "HTML Essentials",
+      "boundaries": {
+        "start_section": "HTML Essentials",
+        "start_lesson": "Dropdown Menus",
+        "end_section": "HTML Essentials",
+        "end_lesson": "More Media Elements - Audio and Video"
+      },
+      "sections": [
+        {
+          "number": 4,
+          "title": "HTML Essentials",
+          "lessons": [
+            {
+              "number": 20,
+              "title": "Dropdown Menus",
+              "challenges": [
+                "The select Element",
+                "Playground - select",
+                "Coders Coffeehouse - select",
+                "The select Element Challenge",
+                "The datalist Element",
+                "Playground - datalist",
+                "Coders Coffeehouse - datalist",
+                "The datalist Element Challenge"
+              ]
+            },
+            {
+              "number": 21,
+              "title": "Form Button",
+              "challenges": [
+                "Form Button",
+                "Playground - Form Button",
+                "Coders Coffeehouse - Form Button",
+                "The Form Button Challenge"
+              ]
+            },
+            {
+              "number": 22,
+              "title": "Form Semantics",
+              "challenges": [
+                "Semantic Form Elements",
+                "Playground - Semantic Form",
+                "Coders Coffeehouse - Semantic Form",
+                "Semantic Form Elements Challenge"
+              ]
+            },
+            {
+              "number": 23,
+              "title": "Form Validation",
+              "challenges": [
+                "Form Validation",
+                "Playground - Form Validation",
+                "Coders Coffeehouse - Form Validation",
+                "Form Validation Challenge"
+              ]
+            },
+            {
+              "number": 24,
+              "title": "Knowledge Checkpoint 3",
+              "challenges": [
+                "Knowledge Checkpoint 3"
+              ]
+            },
+            {
+              "number": 25,
+              "title": "Media Elements - Images",
+              "challenges": [
+                "The img Element",
+                "Playground - img",
+                "Coders Coffeehouse - img",
+                "The img Element Challenge",
+                "The picture Element",
+                "Playground - picture",
+                "Runnable Example - picture",
+                "The picture Element Challenge"
+              ]
+            },
+            {
+              "number": 26,
+              "title": "More Media Elements - Iframes",
+              "challenges": [
+                "IFrames",
+                "Playground - IFrame",
+                "Coders Coffeehouse - IFrames",
+                "IFrames Challenge"
+              ]
+            },
+            {
+              "number": 27,
+              "title": "More Media Elements - Audio and Video",
+              "challenges": [
+                "The audio Element",
+                "Playground - audio",
+                "Runnable Example - audio",
+                "Audio Challenge",
+                "The video Element",
+                "Playground - video",
+                "Runnable Example - video",
+                "Video Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "5",
+      "title": "HTML Essentials",
+      "boundaries": {
+        "start_section": "HTML Essentials",
+        "start_lesson": "Semantic Web - header, nav & footer",
+        "end_section": "HTML Essentials",
+        "end_lesson": "Congratulations on completing HTML Essentials!"
+      },
+      "sections": [
+        {
+          "number": 4,
+          "title": "HTML Essentials",
+          "lessons": [
+            {
+              "number": 29,
+              "title": "Semantic Web - header, nav & footer",
+              "challenges": [
+                "HTML5 and The Semantic Web",
+                "The header Element",
+                "Playground - header",
+                "Coders Coffeehouse - header",
+                "Header Challenge",
+                "The nav Element",
+                "Playground - nav",
+                "Coders Coffeehouse - nav",
+                "Nav Challenge",
+                "The footer Element",
+                "Playground - footer",
+                "Coders Coffeehouse - footer",
+                "Footer Challenge"
+              ]
+            },
+            {
+              "number": 30,
+              "title": "Semantic Web - Section, Article & Aside",
+              "challenges": [
+                "The section Element",
+                "Playground - section",
+                "Coders Coffeehouse - section",
+                "Section Challenge",
+                "The article Element",
+                "Playground - article",
+                "Runnable Example - article",
+                "Article Challenge",
+                "The aside Element",
+                "Playground - aside",
+                "Runnable Example - aside",
+                "Aside Challenge"
+              ]
+            },
+            {
+              "number": 31,
+              "title": "Semantic Web - figure and caption",
+              "challenges": [
+                "The figure Element",
+                "Playground - figure",
+                "Runnable Example - figure",
+                "Figure Challenge",
+                "The caption Element",
+                "Playground - caption",
+                "Runnable Example - caption",
+                "Caption Challenge"
+              ]
+            },
+            {
+              "number": 32,
+              "title": "Semantic Web - details and summary",
+              "challenges": [
+                "The details and summary Elements",
+                "Playground - details and summary",
+                "Runnable Example - details and summary",
+                "Details and Summary Challenge"
+              ]
+            },
+            {
+              "number": 33,
+              "title": "Accessibility in HTML",
+              "challenges": [
+                "Accessibility in HTML",
+                "The aria-label Attribute",
+                "Playground - aria-label",
+                "Coders Coffeehouse - aria-label",
+                "The aria-label Challenge",
+                "The aria-labelledby Attribute",
+                "Playground - aria-labelledby",
+                "Runnable Example - aria-labelledby",
+                "The aria-labelledby Challenge"
+              ]
+            },
+            {
+              "number": 34,
+              "title": "Metadata - charset and viewport",
+              "challenges": [
+                "Metadata",
+                "The meta Element",
+                "Charset and Viewport",
+                "Coders Coffeehouse - charset and viewport",
+                "Charset and Viewport Challenge",
+                "Meta Content",
+                "Coders Coffeehouse - Meta Content",
+                "Meta Content Challenge"
+              ]
+            },
+            {
+              "number": 35,
+              "title": "Knowledge Checkpoint 5",
+              "challenges": [
+                "Knowledge Checkpoint 5"
+              ]
+            },
+            {
+              "number": 36,
+              "title": "Congratulations on completing HTML Essentials!",
+              "challenges": [
+                "Conclusion",
+                "Congratulations! You have completed HTML Essentials"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "6",
+      "title": "CSS Essentials",
+      "boundaries": {
+        "start_section": "CSS Essentials",
+        "start_lesson": "Module Introduction",
+        "end_section": "CSS Essentials",
+        "end_lesson": "CSS DOM Selectors"
+      },
+      "sections": [
+        {
+          "number": 5,
+          "title": "CSS Essentials",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Module Introduction",
+              "challenges": [
+                "Welcome"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "CSS Overview",
+              "challenges": [
+                "CSS Basics",
+                "CSS Targeting an Individual",
+                "CSS Targeting a Group",
+                "CSS Additional Targeted Styling"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "CSS Syntax",
+              "challenges": [
+                "CSS Introduction",
+                "CSS Syntax",
+                "Playground - CSS Syntax",
+                "Coders Coffeehouse - CSS Syntax",
+                "The CSS Syntax Challenge"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "CSS Selectors - Type and Class",
+              "challenges": [
+                "CSS Selectors",
+                "CSS Type selectors",
+                "Playground - Type Selectors",
+                "Coders Coffeehouse - Type Selectors",
+                "CSS Type Selectors Challenge",
+                "CSS Type Selectors Challenge two",
+                "Class Selectors",
+                "Playground - Class Selectors",
+                "Coders Coffeehouse - Class Selectors",
+                "Class Selector Challenge",
+                "Class Selector Challenge Two"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "CSS Selectors - ID and Attribute",
+              "challenges": [
+                "CSS ID Selector",
+                "Playground - ID Selector",
+                "Coders Coffeehouse - ID selector",
+                "ID Selector Challenge",
+                "CSS Attribute Selectors",
+                "Playground - Attribute Selectors",
+                "Coders Coffeehouse - Attribute Selectors",
+                "Attribute Selectors Challenge"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "CSS Selectors - Pseudo-classes",
+              "challenges": [
+                "Pseudo-Class Selectors",
+                "Playground - Pseudo-class",
+                "Coders Coffeehouse - Pseudo-classes",
+                "Pseudo-classes Challenge"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "CSS DOM Selectors",
+              "challenges": [
+                "CSS DOM Selectors",
+                "CSS Child Selector",
+                "Playground - Child Selector",
+                "Coders Coffeehouse - Child Selectors",
+                "Child Selector Challenge",
+                "CSS Descendant Selector",
+                "Playground - Descendant Selector",
+                "Runnable Example - Descendant Selector",
+                "Descendant Selector Challenge",
+                "CSS Sibling Selector",
+                "Playground - Sibling Selector",
+                "Runnable Example - Sibling Selector",
+                "Sibling Selector Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "7",
+      "title": "CSS Essentials",
+      "boundaries": {
+        "start_section": "CSS Essentials",
+        "start_lesson": "Inline and Embedded CSS",
+        "end_section": "CSS Essentials",
+        "end_lesson": "Units of measurement - percentage, vw & vh"
+      },
+      "sections": [
+        {
+          "number": 5,
+          "title": "CSS Essentials",
+          "lessons": [
+            {
+              "number": 9,
+              "title": "Inline and Embedded CSS",
+              "challenges": [
+                "Inline, Embedded and External CSS",
+                "Inline CSS",
+                "Playground - Inline CSS",
+                "Coders Coffeehouse - Inline CSS",
+                "Inline CSS Challenge",
+                "Embedded CSS",
+                "Playground - Embedded CSS",
+                "Runnable Example - Embedded CSS",
+                "Embedded CSS Challenge"
+              ]
+            },
+            {
+              "number": 10,
+              "title": "External CSS and Precedence",
+              "challenges": [
+                "External CSS",
+                "Why External CSS?",
+                "Coders Coffeehouse - External CSS",
+                "CSS Precedence - Which CSS Wins?",
+                "External CSS and Precedence Challenge"
+              ]
+            },
+            {
+              "number": 11,
+              "title": "CSS Rules",
+              "challenges": [
+                "CSS Source Order",
+                "Playground - Source Order",
+                "CSS Source Order Challenge",
+                "CSS Specificity",
+                "Playground - CSS Specificity",
+                "CSS Specificity Runnable Example",
+                "CSS Specificity Challenge",
+                "CSS Inheritance",
+                "Playground - CSS Inheritance",
+                "Runnable Example - CSS Inheritance",
+                "CSS Inheritance Challenge",
+                "General CSS Rules Challenge",
+                "Comments"
+              ]
+            },
+            {
+              "number": 12,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 13,
+              "title": "Units of measurement - pixels, em & rem",
+              "challenges": [
+                "Units of measurement",
+                "Pixels",
+                "Playground - Pixels",
+                "Coders Coffeehouse - Pixels",
+                "Pixels Challenge",
+                "em and rem",
+                "Playground - em and rem",
+                "Coders Coffeehouse - em and rem",
+                "Em Challenge",
+                "Rem Challenge"
+              ]
+            },
+            {
+              "number": 14,
+              "title": "Units of measurement - percentage, vw & vh",
+              "challenges": [
+                "Percentage",
+                "Playground - Percentage",
+                "Coders Coffeehouse - percentage",
+                "Units of Measurement - Percentages Challenge",
+                "vw",
+                "Playground - vw",
+                "Runnable Example - vw",
+                "Units of Measurement - vw Challenge",
+                "vh",
+                "Playground - vh",
+                "Coders Coffeehouse - vh",
+                "Units of Measurement - vh Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "8",
+      "title": "CSS Essentials",
+      "boundaries": {
+        "start_section": "CSS Essentials",
+        "start_lesson": "Font Family",
+        "end_section": "CSS Essentials",
+        "end_lesson": "Chrome Developer Tools"
+      },
+      "sections": [
+        {
+          "number": 5,
+          "title": "CSS Essentials",
+          "lessons": [
+            {
+              "number": 16,
+              "title": "Font Family",
+              "challenges": [
+                "font-family",
+                "Playground - font-family",
+                "Coders Coffeehouse font-family",
+                "font-family challenge"
+              ]
+            },
+            {
+              "number": 17,
+              "title": "Font Color",
+              "challenges": [
+                "Defining color in CSS",
+                "color",
+                "Playground - color",
+                "Coders Coffeehouse font color",
+                "color challenge"
+              ]
+            },
+            {
+              "number": 18,
+              "title": "Font Parameters",
+              "challenges": [
+                "font-size",
+                "Playground - font-size",
+                "Coders Coffeehouse font-size",
+                "font-size challenge",
+                "font-weight",
+                "Playground - font-weight",
+                "Coders Coffeehouse font-weight",
+                "font-weight challenge"
+              ]
+            },
+            {
+              "number": 19,
+              "title": "Font Position",
+              "challenges": [
+                "text-align",
+                "Playground - text-align",
+                "Coders Coffeehouse text-align",
+                "text-align challenge",
+                "vertical-align",
+                "Playground - vertical align",
+                "Runnable Example vertical-align",
+                "vertical-align challenge"
+              ]
+            },
+            {
+              "number": 20,
+              "title": "Font Style",
+              "challenges": [
+                "text-transform",
+                "Playground - text-transform",
+                "Coders Coffeehouse text-transform",
+                "text-transform challenge",
+                "text-decoration",
+                "Playground - text-decoration",
+                "Coders Coffeehouse text-decoration",
+                "text-decoration challenge",
+                "font-style",
+                "Playground - font-style",
+                "Coders Coffeehouse font-style",
+                "font-style challenge"
+              ]
+            },
+            {
+              "number": 21,
+              "title": "Knowledge Checkpoint 4",
+              "challenges": [
+                "Knowledge Checkpoint 4"
+              ]
+            },
+            {
+              "number": 22,
+              "title": "Chrome Developer Tools",
+              "challenges": [
+                "Chrome Developer Tools: Introduction",
+                "Chrome Developer Tools: Device Views",
+                "Chrome Developer Tools: CSS"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "9",
+      "title": "CSS Essentials",
+      "boundaries": {
+        "start_section": "CSS Essentials",
+        "start_lesson": "The box-model - Content and Padding",
+        "end_section": "CSS Essentials",
+        "end_lesson": "Background Source"
+      },
+      "sections": [
+        {
+          "number": 5,
+          "title": "CSS Essentials",
+          "lessons": [
+            {
+              "number": 23,
+              "title": "The box-model - Content and Padding",
+              "challenges": [
+                "The Box Model Introduction part 1",
+                "The Box Model Introduction part 2",
+                "Content",
+                "Playground - content",
+                "Coders Coffeehouse content",
+                "Padding",
+                "Playground - padding",
+                "Coders Coffeehouse padding",
+                "padding challenge"
+              ]
+            },
+            {
+              "number": 24,
+              "title": "The box-model - Border and Margin",
+              "challenges": [
+                "Border",
+                "Playground - border",
+                "Coders Coffeehouse border",
+                "border challenge",
+                "Margin",
+                "Playground - margin",
+                "Coders Coffeehouse margin",
+                "margin challenge"
+              ]
+            },
+            {
+              "number": 25,
+              "title": "Background Appearance",
+              "challenges": [
+                "Backgrounds in CSS",
+                "Background Color",
+                "Playground - background-color",
+                "Coders Coffeehouse background-color",
+                "background-color challenge",
+                "background-image",
+                "Playground - background-image",
+                "Coders Coffeehouse background-image",
+                "background-image challenge",
+                "background-repeat",
+                "Playground - background-repeat",
+                "Coders Coffeehouse background-repeat",
+                "background-repeat challenge"
+              ]
+            },
+            {
+              "number": 26,
+              "title": "Background Positioning",
+              "challenges": [
+                "background-size",
+                "Playground - background-size",
+                "Coders Coffeehouse background-size",
+                "background-size challenge",
+                "background-position",
+                "Playground - background-position",
+                "Coders Coffeehouse background-position",
+                "background-position challenge"
+              ]
+            },
+            {
+              "number": 27,
+              "title": "Background Source",
+              "challenges": [
+                "background-attachment",
+                "Playground - background-attachment",
+                "Coders Coffeehouse background-attachment",
+                "background-attachment challenge",
+                "shorthand background property",
+                "Playground - background",
+                "Coders Coffeehouse background shorthand",
+                "background shorthand challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "10",
+      "title": "CSS Essentials",
+      "boundaries": {
+        "start_section": "CSS Essentials",
+        "start_lesson": "Layout",
+        "end_section": "CSS Essentials",
+        "end_lesson": "Z-index"
+      },
+      "sections": [
+        {
+          "number": 5,
+          "title": "CSS Essentials",
+          "lessons": [
+            {
+              "number": 28,
+              "title": "Layout",
+              "challenges": [
+                "Block-Level Elements",
+                "Playground - block-level",
+                "Coders Coffeehouse block-level",
+                "Block-Level Challenge",
+                "Inline Elements",
+                "Playground - inline",
+                "Runnable Example - inline",
+                "inline challenge",
+                "Inline-Block Elements",
+                "Playground - inline-block",
+                "Coders Coffeehouse inline-block",
+                "inline-block challenge"
+              ]
+            },
+            {
+              "number": 29,
+              "title": "Visibility",
+              "challenges": [
+                "Visibility",
+                "Playground - visibility",
+                "Runnable Example visibility",
+                "Visibility Challenge"
+              ]
+            },
+            {
+              "number": 30,
+              "title": "Knowledge Checkpoint 5",
+              "challenges": [
+                "Knowledge Checkpoint 5"
+              ]
+            },
+            {
+              "number": 31,
+              "title": "Positioning - Static and Relative",
+              "challenges": [
+                "Static positioning",
+                "Playground - static",
+                "Static Runnable Example",
+                "Relative Positioning",
+                "Playground - relative positioning",
+                "Coders Coffeehouse relative positioning",
+                "Relative Positioning Challenge"
+              ]
+            },
+            {
+              "number": 32,
+              "title": "Positioning - Absolute and Fixed",
+              "challenges": [
+                "Absolute positioning",
+                "Playground - absolute",
+                "Absolute Runnable Example",
+                "Absolute challenge",
+                "Fixed Positioning",
+                "Playground - fixed positioning",
+                "Coders Coffeehouse fixed positioning",
+                "Fixed Positioning Challenge"
+              ]
+            },
+            {
+              "number": 33,
+              "title": "Z-index",
+              "challenges": [
+                "Z-index",
+                "Playground - z-index",
+                "Coders Coffeehouse z-index",
+                "z-index Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

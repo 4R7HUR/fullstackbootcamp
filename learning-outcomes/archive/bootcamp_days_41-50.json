@@ -1,0 +1,659 @@
+{
+  "days": [
+    {
+      "day": "41",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "42",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "43",
+      "title": "Python Essentials",
+      "boundaries": {
+        "start_section": "Python Essentials",
+        "start_lesson": "Module Introduction",
+        "end_section": "Python Essentials",
+        "end_lesson": "Python-Specific Data Types"
+      },
+      "sections": [
+        {
+          "number": 19,
+          "title": "Python Essentials",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Module Introduction",
+              "challenges": [
+                "Welcome",
+                "What Python Is",
+                "How Python Differs From JavaScript"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Displaying Output & Debugging",
+              "challenges": [
+                "The print() Statement",
+                "Breakpoints Using raise SystemExit",
+                "Syntax Errors",
+                "Logic Errors"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Python Variables",
+              "challenges": [
+                "Declaring Variables in Python",
+                "Declaring Variables in Python Challenge",
+                "A Word About Functions Before We Continue",
+                "Python Frameworks, Modules and Libraries"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Python-Specific Data Types",
+              "challenges": [
+                "Determining the Data Type",
+                "Determining the Data Type Challenge",
+                "Integers, Floats & Decimals",
+                "Integers, Floats & Decimals Challenge",
+                "None",
+                "None Challenge",
+                "String Variables",
+                "String Variables Challenge",
+                "Converting Between Data Types",
+                "Converting Between Data Types Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "44",
+      "title": "Python Essentials",
+      "boundaries": {
+        "start_section": "Python Essentials",
+        "start_lesson": "Python-Specific Operators",
+        "end_section": "Python Essentials",
+        "end_lesson": "Python Flow Control"
+      },
+      "sections": [
+        {
+          "number": 19,
+          "title": "Python Essentials",
+          "lessons": [
+            {
+              "number": 6,
+              "title": "Python-Specific Operators",
+              "challenges": [
+                "Storing Values With Assignment Operators",
+                "Basic Math With Arithmetic Operators",
+                "Basic Math With Arithmetic Operators Challenge",
+                "Incrementing & Decrementing",
+                "Incrementing & Decrementing Challenge",
+                "String Formatting",
+                "String Formatting Challenge",
+                "String Methods",
+                "String Methods Challenge"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "Python-Specific Comparators",
+              "challenges": [
+                "Comparing Values With Comparison Operators",
+                "Comparing Values With Comparison Operators Challenge",
+                "Determining Truth With Logical Operators",
+                "Determining Truth With Logical Operators Challenge",
+                "Truthy & Falsy Values Challenge",
+                "Equality vs. Identity",
+                "Equality vs. Identity Challenge",
+                "Checking Containment with Containment Operators",
+                "Checking Containment with Containment Operators Challenge"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "Python Flow Control",
+              "challenges": [
+                "If/Else Statements",
+                "If/Else Challenge",
+                "Ternary Expressions in Python",
+                "Ternary Expressions in Python Challenge",
+                "Python Flow Control",
+                "Multiple Conditions (If/Elif/Else)",
+                "Multiple Conditions (If/Elif/Else) Challenge",
+                "Nested If/Else Statements",
+                "Nested If/Else Statements Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "45",
+      "title": "Python Essentials",
+      "boundaries": {
+        "start_section": "Python Essentials",
+        "start_lesson": "Python Iteration",
+        "end_section": "Python Essentials",
+        "end_lesson": "Python Best Practices"
+      },
+      "sections": [
+        {
+          "number": 19,
+          "title": "Python Essentials",
+          "lessons": [
+            {
+              "number": 10,
+              "title": "Python Iteration",
+              "challenges": [
+                "For Loops",
+                "For Loops Challenge",
+                "While Loops",
+                "While Loops Challenge",
+                "Controlling Iteration (Break, Continue & Pass)",
+                "Controlling Iteration with break Challenge",
+                "Controlling Iteration with pass Challenge",
+                "Nested Iteration",
+                "Nested Iteration Challenge"
+              ]
+            },
+            {
+              "number": 11,
+              "title": "Python Data Structures",
+              "challenges": [
+                "Lists",
+                "List Challenge",
+                "List Slicing & Indexing",
+                "List Slicing & Indexing Challenge",
+                "List Methods",
+                "List Methods Challenge",
+                "Tuples",
+                "Tuples Challenge",
+                "Dictionaries",
+                "Dictionaries Challenge",
+                "Getting & Setting Dictionary Items",
+                "Getting & Setting Dictionary Items Challenge",
+                "Dictionary Methods",
+                "Dictionary Methods Challenge",
+                "Sets",
+                "Sets Challenge"
+              ]
+            },
+            {
+              "number": 12,
+              "title": "Working With Python Data Structures",
+              "challenges": [
+                "Iterating Python Data Structures",
+                "Iterating Python Data Structures Challenge",
+                "List Comprehensions",
+                "List Comprehensions Challenge",
+                "Dictionary Comprehensions",
+                "Dictionary Comprehensions Challenge",
+                "Nested Data Structures",
+                "Nested Data Structures Challenge"
+              ]
+            },
+            {
+              "number": 13,
+              "title": "Knowledge Checkpoint 3",
+              "challenges": [
+                "Knowledge Checkpoint 3"
+              ]
+            },
+            {
+              "number": 14,
+              "title": "Python Best Practices",
+              "challenges": [
+                "Variable Naming Conventions",
+                "Function Naming Conventions",
+                "Class Naming Conventions",
+                "Comments in Python",
+                "Indentation in Python",
+                "Reserved Keywords"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "46",
+      "title": "Python Essentials",
+      "boundaries": {
+        "start_section": "Python Essentials",
+        "start_lesson": "Functions",
+        "end_section": "Python Essentials",
+        "end_lesson": "Built-in Functions & Tools"
+      },
+      "sections": [
+        {
+          "number": 19,
+          "title": "Python Essentials",
+          "lessons": [
+            {
+              "number": 15,
+              "title": "Functions",
+              "challenges": [
+                "Defining Functions in Python Refresh",
+                "Calling Functions",
+                "Calling Functions Challenge",
+                "Taking Parameters & Returning Results",
+                "Writing simple Functions in Python",
+                "Taking Parameters and Returning Results Challenge",
+                "Splat! *args & **kwargs",
+                "Splat! *args & **kwargs Challenge",
+                "Scope - Local vs Global Variables",
+                "The global Keyword",
+                "The global Keyword Challenge",
+                "The nonlocal Keyword",
+                "The nonlocal Keyword Challenge",
+                "Passing Functions Around",
+                "Decorators",
+                "Decorators Challenge",
+                "Writing Functions in Python - Code-along Challenge"
+              ]
+            },
+            {
+              "number": 16,
+              "title": "Knowledge Checkpoint 4",
+              "challenges": [
+                "Knowledge Checkpoint 4"
+              ]
+            },
+            {
+              "number": 17,
+              "title": "Classes",
+              "challenges": [
+                "Defining Classes in Python",
+                "The __init__() Method",
+                "The __init__() Method Challenge",
+                "The \"self\" Keyword",
+                "The \"self\" Keyword Challenge",
+                "Creating Class Instances",
+                "Creating Class Instances Challenge",
+                "Class Properties & Attributes",
+                "Class Properties & Attributes Challenge",
+                "Functions + Classes: Methods",
+                "Functions + Classes: Methods Challenge"
+              ]
+            },
+            {
+              "number": 18,
+              "title": "Object Oriented Concepts",
+              "challenges": [
+                "Object Oriented Programming",
+                "Subclassing & Inheritance",
+                "Subclassing & Inheritance Challenge",
+                "Mixins",
+                "Class Composition",
+                "Class Composition & Mixins Challenge",
+                "Superclassing: Accessing the Parent",
+                "Superclassing: Accessing the Parent Challenge",
+                "Passing Methods Around",
+                "Passing Methods Around Challenge",
+                "Decorators in OOP"
+              ]
+            },
+            {
+              "number": 19,
+              "title": "Built-in Functions & Tools",
+              "challenges": [
+                "The import Statement",
+                "The import Statement Challenge",
+                "Math",
+                "Math Challenge",
+                "datetime",
+                "Datetime Challenge",
+                "io",
+                "io Challenge",
+                "os",
+                "os.path()",
+                "random",
+                "random Challenge",
+                "Third Party Libraries",
+                "Third Party Libraries Challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "47",
+      "title": "Python Essentials",
+      "boundaries": {
+        "start_section": "Python Essentials",
+        "start_lesson": "Python Input & Output Operations",
+        "end_section": "Python Essentials",
+        "end_lesson": "Congratulations! You've just completed Python Essentials"
+      },
+      "sections": [
+        {
+          "number": 19,
+          "title": "Python Essentials",
+          "lessons": [
+            {
+              "number": 21,
+              "title": "Python Input & Output Operations",
+              "challenges": [
+                "What are Input/Output Operations?",
+                "Reading Data From a User",
+                "Returning Data to a User",
+                "Reading Data From a File",
+                "Reading Data from a File Challenge"
+              ]
+            },
+            {
+              "number": 22,
+              "title": "Python Exception Handling",
+              "challenges": [
+                "Runtime Errors",
+                "Try Statements",
+                "Try Statements Challenge",
+                "Try & Except Statements",
+                "Catching Specific Errors",
+                "Catching Specific Errors Challenge",
+                "Catching Generic Errors With “as”",
+                "Catching Generic Errors With “as” Challenge",
+                "Else & Finally Statements",
+                "Else & Finally Statements Challenge"
+              ]
+            },
+            {
+              "number": 23,
+              "title": "Knowledge Checkpoint 6",
+              "challenges": [
+                "Knowledge Checkpoint 6"
+              ]
+            },
+            {
+              "number": 24,
+              "title": "Congratulations! You've just completed Python Essentials",
+              "challenges": [
+                "Congratulations! You've just completed Python Essentials"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "48",
+      "title": "Heroku for Students",
+      "boundaries": {
+        "start_section": "Heroku for Students",
+        "start_lesson": "Activating Your Heroku For Students Account",
+        "end_section": "Virtual Environments in Python",
+        "end_lesson": "Virtual Environments in Python"
+      },
+      "sections": [
+        {
+          "number": 20,
+          "title": "Heroku for Students",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Activating Your Heroku For Students Account",
+              "challenges": [
+                "Why Do I Need This?",
+                "Heroku for Students",
+                "Activating The Pack",
+                "Activating Your Eco Dynos"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "title": "Virtual Environments in Python",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Virtual Environments in Python",
+              "challenges": [
+                "Introducing virtual environments",
+                "Getting hands on with venv",
+                "Managing dependencies in a virtual environment",
+                "Managing different versions of Python",
+                "Quiz",
+                "Challenge",
+                "End of module feedback"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "49",
+      "title": "Working With Database Management Systems",
+      "boundaries": {
+        "start_section": "Working With Database Management Systems",
+        "start_lesson": "Let's Talk about Data",
+        "end_section": "Individual Full-Stack Project: Assessments Guide Preview",
+        "end_lesson": "Individual Full-Stack Project"
+      },
+      "sections": [
+        {
+          "number": 22,
+          "title": "Working With Database Management Systems",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Let's Talk about Data",
+              "challenges": [
+                "What is data?",
+                "How is data stored?",
+                "Let's Talk about Data Quiz 1",
+                "The need for databases",
+                "Relational vs Non-Relational Data",
+                "Modeling data",
+                "Structured Query Language",
+                "Let's Talk about Data Quiz 2"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "First look at an RDBMS",
+              "challenges": [
+                "What is PostgreSQL?",
+                "Installing the Chinook database",
+                "PostgreSQL from the command line"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "PostgreSQL and Python",
+              "challenges": [
+                "Installing the libraries & setting up",
+                "Introducing an ORM",
+                "Running basic queries",
+                "Introducing class-based models",
+                "Code-Along 1: Create and Read",
+                "Code-Along 2: Update and Delete"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "End of Module Knowledge Checkpoint",
+              "challenges": [
+                "End of Module Knowledge Checkpoint"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "title": "Individual Full-Stack Project: Assessments Guide Preview",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Individual Full-Stack Project",
+              "challenges": [
+                "Individual Full-Stack Project Assessment Guide",
+                "Things to be aware of"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "50",
+      "title": "Principles of Agile Development",
+      "boundaries": {
+        "start_section": "Principles of Agile Development",
+        "start_lesson": "Introduction to Agile",
+        "end_section": "Principles of Agile Development",
+        "end_lesson": "Agile Roles"
+      },
+      "sections": [
+        {
+          "number": 24,
+          "title": "Principles of Agile Development",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction to Agile",
+              "challenges": [
+                "Introduction to Agile",
+                "What is Agile?",
+                "The Challenges of the Waterfall Approach",
+                "The Benefits of Agile",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "The Agile Manifesto",
+              "challenges": [
+                "Agile Values",
+                "Agile Principles",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Iterative and Incremental Development",
+              "challenges": [
+                "Iterative and Incremental Development",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Project/Delivery Constraints",
+              "challenges": [
+                "Introduction to Project Constraints",
+                "Rethinking Project Constraints with Agile - Challenge",
+                "The Agile perspective to Project's Constraints"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Agile Roles",
+              "challenges": [
+                "Roles in Agile"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

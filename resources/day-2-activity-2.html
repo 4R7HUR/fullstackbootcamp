@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nested Lists & JavaScript</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="p-4">
+
+        <h1>Full Stack Development with AI Bootcamp</h1>
+        <p>Click a section or lesson to expand or collapse its contents.</p>
+
+        <div id="course-navigation"></div>
+
+    </main>
+
+    <script src="../data/bootcamp_content.js"></script>
+
+    <script>
+        // START: Build interactive nested lists
+
+        // Variables
+        const course_navigation = document.getElementById("course-navigation");
+
+        const section_list = document.createElement("ol");
+
+        // Loop through sections
+        bootcamp_content.sections.forEach((section, section_index) => {
+
+            // Create the section list item
+            const section_item = document.createElement("li");
+
+            // Create the section heading
+            const section_button = document.createElement("button");
+            section_button.type = "button";
+            section_button.className = "btn btn-link p-0 text-start";
+            section_button.textContent = section.title;
+
+            // Create the lessons list
+            const lesson_list = document.createElement("ol");
+            lesson_list.className = "collapse";
+            lesson_list.id = `lessons-${section_index}`;
+
+            section_button.setAttribute("data-bs-toggle", "collapse");
+            section_button.setAttribute("data-bs-target", `#lessons-${section_index}`);
+            section_button.setAttribute("aria-expanded", "false");
+            section_button.setAttribute("aria-controls", `lessons-${section_index}`);
+
+            // Loop through lessons
+            section.lessons.forEach((lesson, lesson_index) => {
+
+                // Create the lesson list item
+                const lesson_item = document.createElement("li");
+
+                // Create the lesson heading
+                const lesson_button = document.createElement("button");
+                lesson_button.type = "button";
+                lesson_button.className = "btn btn-link p-0 text-start";
+                lesson_button.textContent = lesson.title;
+
+                // Create the challenges list
+                const challenge_list = document.createElement("ul");
+                challenge_list.className = "collapse";
+                challenge_list.id = `challenges-${section_index}-${lesson_index}`;
+
+                lesson_button.setAttribute("data-bs-toggle", "collapse");
+                lesson_button.setAttribute(
+                    "data-bs-target",
+                    `#challenges-${section_index}-${lesson_index}`
+                );
+                lesson_button.setAttribute("aria-expanded", "false");
+                lesson_button.setAttribute(
+                    "aria-controls",
+                    `challenges-${section_index}-${lesson_index}`
+                );
+
+                // Loop through challenges
+                lesson.challenges.forEach(challenge => {
+
+                    const challenge_item = document.createElement("li");
+                    challenge_item.textContent = challenge;
+
+                    challenge_list.appendChild(challenge_item);
+                });
+
+                // Nest the challenges inside the lesson
+                lesson_item.appendChild(lesson_button);
+                lesson_item.appendChild(challenge_list);
+
+                lesson_list.appendChild(lesson_item);
+            });
+
+            // Nest the lessons inside the section
+            section_item.appendChild(section_button);
+            section_item.appendChild(lesson_list);
+
+            section_list.appendChild(section_item);
+        });
+
+        // Add the completed list to the page
+        course_navigation.appendChild(section_list);
+
+        // STOP: Build interactive nested lists
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

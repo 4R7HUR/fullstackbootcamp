@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nested Lists-v1</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="p-4">
+
+        <h1>Full Stack Development with AI Bootcamp</h1>
+
+        <div id="course-navigation"></div>
+
+    </main>
+
+    <script src="../bootcamp_content.js"></script>
+
+    <script>
+        // START: Build nested lists
+
+        // Variables
+        const course_navigation = document.getElementById("course-navigation");
+        const section_list = document.createElement("ol");
+
+        // Loop through sections
+        bootcamp_content.sections.forEach(section => {
+
+            const section_item = document.createElement("li");
+            section_item.textContent = section.title;
+
+            // Create the lessons list
+            const lesson_list = document.createElement("ol");
+
+            // Loop through lessons
+            section.lessons.forEach(lesson => {
+
+                const lesson_item = document.createElement("li");
+                lesson_item.textContent = lesson.title;
+
+                // Create the challenges list
+                const challenge_list = document.createElement("ul");
+
+                // Loop through challenges
+                lesson.challenges.forEach(challenge => {
+
+                    const challenge_item = document.createElement("li");
+                    challenge_item.textContent = challenge;
+
+                    challenge_list.appendChild(challenge_item);
+                });
+
+                // Nest challenges inside the lesson
+                lesson_item.appendChild(challenge_list);
+
+                // Add lesson to the lessons list
+                lesson_list.appendChild(lesson_item);
+            });
+
+            // Nest lessons inside the section
+            section_item.appendChild(lesson_list);
+
+            // Add section to the main list
+            section_list.appendChild(section_item);
+        });
+
+        // Add the completed list to the page
+        course_navigation.appendChild(section_list);
+
+        // STOP: Build nested lists
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,705 @@
+{
+  "days": [
+    {
+      "day": "11",
+      "title": "CSS Essentials",
+      "boundaries": {
+        "start_section": "CSS Essentials",
+        "start_lesson": "Overflow",
+        "end_section": "CSS Essentials",
+        "end_lesson": "Module Recap"
+      },
+      "sections": [
+        {
+          "number": 5,
+          "title": "CSS Essentials",
+          "lessons": [
+            {
+              "number": 34,
+              "title": "Overflow",
+              "challenges": [
+                "The overflow property",
+                "Playground - overflow",
+                "Coders Coffeehouse - Overflow",
+                "Overflow challenge"
+              ]
+            },
+            {
+              "number": 35,
+              "title": "Flexbox",
+              "challenges": [
+                "Introducing the lesson format",
+                "Flexbox: Why do we need it?",
+                "Flexbox: Meet the parent properties",
+                "Flexbox: the wayward child properties - flex-basis, align-self and order",
+                "Flexbox: the wayward child properties: flex-grow",
+                "Flexbox: the wayward child properties: flex-shrink",
+                "Flexbox: the wayward child properties: flex shorthand",
+                "Introducing the end-of-lesson challenge format",
+                "Coders Coffeehouse: styling the contact section with flexbox",
+                "Refactoring with flexbox",
+                "New Format Survey"
+              ]
+            },
+            {
+              "number": 36,
+              "title": "Knowledge Checkpoint 6",
+              "challenges": [
+                "Knowledge Checkpoint 6"
+              ]
+            },
+            {
+              "number": 37,
+              "title": "Coders Coffeehouse tidy-up",
+              "challenges": [
+                "Coders Coffeehouse: tidy-up",
+                "Coders Coffeehouse: Tidy-up Challenge"
+              ]
+            },
+            {
+              "number": 38,
+              "title": "File Paths",
+              "challenges": [
+                "Understanding Filepaths",
+                "File Paths"
+              ]
+            },
+            {
+              "number": 39,
+              "title": "Module Recap",
+              "challenges": [
+                "Congratulations on completing CSS Essentials"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "12",
+      "title": "IDE & Deployment Essentials",
+      "boundaries": {
+        "start_section": "IDE & Deployment Essentials",
+        "start_lesson": "Understanding IDEs",
+        "end_section": "IDE & Deployment Essentials",
+        "end_lesson": "End of Module Knowledge Checkpoint"
+      },
+      "sections": [
+        {
+          "number": 6,
+          "title": "IDE & Deployment Essentials",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Understanding IDEs",
+              "challenges": [
+                "Introduction to IDEs",
+                "Getting VS Code set up"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Quiz: Understanding IDEs",
+              "challenges": [
+                "Quiz: Understanding IDEs"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Managing Projects in VSCode",
+              "challenges": [
+                "Creating your first project with VS Code",
+                "Linking Files with Paths",
+                "VS Code Extensions",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Version Control Basics",
+              "challenges": [
+                "Introduction to Version Control",
+                "Connecting Projects to GitHub",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Working with Git",
+              "challenges": [
+                "The Git Commit Cycle",
+                "Using the VS Code Source Control Panel",
+                "Viewing commits on GitHub",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "Documentation",
+              "challenges": [
+                "Introduction to the README"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "Deployment Essentials",
+              "challenges": [
+                "Introduction to Deployment",
+                "Deploying to GitHub Pages"
+              ]
+            },
+            {
+              "number": 9,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 10,
+              "title": "End of Module Knowledge Checkpoint",
+              "challenges": [
+                "End of Module Knowledge Checkpoint"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "13",
+      "title": "User Experience Essentials",
+      "boundaries": {
+        "start_section": "User Experience Essentials",
+        "start_lesson": "Introduction To User Experience Design (UXD)",
+        "end_section": "User Experience Essentials",
+        "end_lesson": "End of Module Knowledge Checkpoint"
+      },
+      "sections": [
+        {
+          "number": 7,
+          "title": "User Experience Essentials",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction To User Experience Design (UXD)",
+              "challenges": [
+                "Introduction To User Experience Design (UXD)",
+                "A brief look at the 5 planes of UX",
+                "Tasks and Information",
+                "Applying what we have learned",
+                "How to use the process",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "The Strategy Plane",
+              "challenges": [
+                "High Level Considerations",
+                "B2B vs B2C",
+                "Strategy Tradeoffs",
+                "Quiz",
+                "Strategy Challenge"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "The Scope Plane",
+              "challenges": [
+                "Scope Plane Tradeoffs",
+                "Scope Plane requirements",
+                "Scope Plane requirement types",
+                "Quiz",
+                "Scope Challenge"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "The Structure Plane",
+              "challenges": [
+                "The Structure Plane concerns",
+                "Interaction Design (IXD)",
+                "Information Architecture (IA)",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "The Skeleton Plane",
+              "challenges": [
+                "Skeleton Plane - adding form to function",
+                "Features and usefulness",
+                "Metaphors",
+                "Wireframes",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "The Surface Plane",
+              "challenges": [
+                "The Surface plane concerns",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 9,
+              "title": "End of Module Knowledge Checkpoint",
+              "challenges": [
+                "End of Module Knowledge Checkpoint"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "14",
+      "title": "Love Running - Essentials Project",
+      "boundaries": {
+        "start_section": "Love Running - Essentials Project",
+        "start_lesson": "Introduction to the walkthrough project",
+        "end_section": "Love Running - Essentials Project",
+        "end_lesson": "The benefits of early deployment"
+      },
+      "sections": [
+        {
+          "number": 8,
+          "title": "Love Running - Essentials Project",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction to the walkthrough project",
+              "challenges": [
+                "Introduction to Love Running"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Getting set up",
+              "challenges": [
+                "Getting set up"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Let's get started",
+              "challenges": [
+                "Setting up the basic HTML structure: Part 1",
+                "Setting up the basic HTML structure: Part 2",
+                "Setting up some basic CSS styles",
+                "Google Fonts",
+                "Creating the header",
+                "Styling the header for mobile",
+                "Toggling a dropdown menu",
+                "Making the header responsive",
+                "Creating the footer",
+                "Challenge: Creating the other pages"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "The benefits of early deployment",
+              "challenges": [
+                "Why early deployment is important",
+                "Let's deploy!"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "15",
+      "title": "Love Running - Essentials Project",
+      "boundaries": {
+        "start_section": "Love Running - Essentials Project",
+        "start_lesson": "Time to add some content",
+        "end_section": "Love Running - Essentials Project",
+        "end_lesson": "One last thing"
+      },
+      "sections": [
+        {
+          "number": 8,
+          "title": "Love Running - Essentials Project",
+          "lessons": [
+            {
+              "number": 5,
+              "title": "Time to add some content",
+              "challenges": [
+                "Adding the hero image",
+                "Adding the cover text to the hero image",
+                "Adding the Reasons section",
+                "Making the Reasons section responsive",
+                "Meetup times"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "How about that gallery?",
+              "challenges": [
+                "Let's add some images"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "Let's get signed up!",
+              "challenges": [
+                "Creating the form",
+                "Styling the form"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "One last thing",
+              "challenges": [
+                "Testing and validation",
+                "End of module feedback"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "16",
+      "title": "Project Planning",
+      "boundaries": {
+        "start_section": "Project Planning",
+        "start_lesson": "Introduction to planning",
+        "end_section": "Project Planning",
+        "end_lesson": "End of Module Knowledge Checkpoint"
+      },
+      "sections": [
+        {
+          "number": 9,
+          "title": "Project Planning",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction to planning",
+              "challenges": [
+                "Welcome",
+                "User stories",
+                "Acceptance criteria and tasks"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Prioritisation with GitHub Projects",
+              "challenges": [
+                "Introduction to GitHub Projects",
+                "User story prioritisation",
+                "Creating tags in GitHub Projects"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Monitoring progress",
+              "challenges": [
+                "Monitoring progress",
+                "Review"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "End of Module Knowledge Checkpoint",
+              "challenges": [
+                "End of Module Knowledge Checkpoint"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "17",
+      "title": "Introduction to Bootstrap",
+      "boundaries": {
+        "start_section": "Introduction to Bootstrap",
+        "start_lesson": "Introduction to Bootstrap",
+        "end_section": "Introduction to Bootstrap",
+        "end_lesson": "Customising Bootstrap"
+      },
+      "sections": [
+        {
+          "number": 10,
+          "title": "Introduction to Bootstrap",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction to Bootstrap",
+              "challenges": [
+                "Welcome",
+                "The Bootstrap library",
+                "Getting set up",
+                "Quiz"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Bootstrap basics",
+              "challenges": [
+                "Styling text content",
+                "Combining Bootstrap classes on buttons",
+                "Combining elements for more complex components",
+                "Bootstrap basics end of lesson challenge"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "Responsive design with the Bootstrap grid",
+              "challenges": [
+                "Introduction to the Bootstrap Grid",
+                "Bootstrap grid basics",
+                "Challenge: Build a grid",
+                "Responsive design with Bootstrap breakpoints",
+                "Responsive grid: End of lesson challenge"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Putting it together",
+              "challenges": [
+                "Bootstrapping a portfolio",
+                "Adding a navbar",
+                "Adjusting the navbar styling",
+                "Challenge: Adding some content",
+                "Forms",
+                "Challenge: Adding a Contact Form",
+                "Challenge: Add a modal with a simple form"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "Customising Bootstrap",
+              "challenges": [
+                "Customising Bootstrap components",
+                "Enhancing Bootstrap styles and organising CSS",
+                "Overriding Bootstrap styles",
+                "Polishing your Bootstrap customisations",
+                "Customising Bootstrap: End of lesson challenge",
+                "Congratulations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "18",
+      "title": "Boardwalk Games",
+      "boundaries": {
+        "start_section": "Boardwalk Games",
+        "start_lesson": "Beginning the quest: Getting started",
+        "end_section": "Boardwalk Games",
+        "end_lesson": "Rolling out the header: Navigating the first moves"
+      },
+      "sections": [
+        {
+          "number": 11,
+          "title": "Boardwalk Games",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Beginning the quest: Getting started",
+              "challenges": [
+                "Welcome",
+                "Project planning",
+                "Project design",
+                "Challenge: Plan and design Game Library page"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Setting the board: Getting set up",
+              "challenges": [
+                "Setting up our repository and GitHub Project",
+                "Challenge: Setting up our workspace",
+                "Challenge: Completing set up and deployment",
+                "CSS Variables",
+                "Adding the home page boilerplate",
+                "Challenge: Add the Game Library page boilerplate"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Rolling out the header: Navigating the first moves",
+              "challenges": [
+                "Home page navigation",
+                "Styling the navbar",
+                "Adding the header text",
+                "Challenge: Add the carousel",
+                "Game Library navbar and header"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "19",
+      "title": "Boardwalk Games",
+      "boundaries": {
+        "start_section": "Boardwalk Games",
+        "start_lesson": "The main quest: Crafting the core content",
+        "end_section": "Boardwalk Games",
+        "end_lesson": "The Endgame: Finishing up"
+      },
+      "sections": [
+        {
+          "number": 11,
+          "title": "Boardwalk Games",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "The main quest: Crafting the core content",
+              "challenges": [
+                "Adding the services section - Part 1",
+                "Adding the services section - Part 2",
+                "Challenge: Adding featured board games to the game library"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "Dungeon directory: The essential information",
+              "challenges": [
+                "Adding the contact details",
+                "Challenge: Adding the opening times",
+                "Styling the table"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Forming Alliances: Adding forms",
+              "challenges": [
+                "Creating the Booking inquiry form",
+                "Form success page and button styling"
+              ]
+            },
+            {
+              "number": 7,
+              "title": "Boss Fight: Complete the \"should\" user stories",
+              "challenges": [
+                "Challenge: Add the Join our Events section",
+                "Challenge: Add the board game reservation form"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "The Endgame: Finishing up",
+              "challenges": [
+                "Manual testing and tidying up",
+                "Automated testing with Lighthouse",
+                "HTML and CSS validation",
+                "Challenge: Complete the testing",
+                "Congratulations",
+                "End of Module Feedback"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "20",
+      "title": "Introduction to Copilot",
+      "boundaries": {
+        "start_section": "Introduction to Copilot",
+        "start_lesson": "First Steps",
+        "end_section": "AI Pair Programming 1",
+        "end_lesson": "Retrospective"
+      },
+      "sections": [
+        {
+          "number": 12,
+          "title": "Introduction to Copilot",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "First Steps",
+              "challenges": [
+                "Installing Copilot",
+                "Copilot Chat",
+                "Debugging in Copilot",
+                "When to take over",
+                "Challenge",
+                "Quiz"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "title": "AI Pair Programming 1",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Ideation",
+              "challenges": [
+                "What we're going to build",
+                "It's all about the user"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Development",
+              "challenges": [
+                "Building the navbar",
+                "Adding Images - Part 1",
+                "Adding Images - Part 2",
+                "Content Creation Challenge",
+                "Code validation",
+                "Keeping in contact",
+                "Challenge: Create the detailed services page"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Retrospective",
+              "challenges": [
+                "Challenge - In retrospect"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

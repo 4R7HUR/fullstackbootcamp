@@ -1,0 +1,392 @@
+{
+  "days": [
+    {
+      "day": "31",
+      "title": "Love Maths - Essentials Project",
+      "boundaries": {
+        "start_section": "Love Maths - Essentials Project",
+        "start_lesson": "Introduction",
+        "end_section": "Love Maths - Essentials Project",
+        "end_lesson": "Adding some JavaScript"
+      },
+      "sections": [
+        {
+          "number": 16,
+          "title": "Love Maths - Essentials Project",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Introduction",
+              "challenges": [
+                "Introduction"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Putting The Basics in Place",
+              "challenges": [
+                "Getting Set Up",
+                "Writing some HTML - part 1",
+                "Writing some HTML - part 2",
+                "Let's get stylish"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Adding some JavaScript",
+              "challenges": [
+                "Adding structure",
+                "Creating Event Listeners",
+                "Generating Random Numbers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "32",
+      "title": "Love Maths - Essentials Project",
+      "boundaries": {
+        "start_section": "Love Maths - Essentials Project",
+        "start_lesson": "Displaying The Question and Getting The Answer",
+        "end_section": "Love Maths - Essentials Project",
+        "end_lesson": "Displaying The Question and Getting The Answer"
+      },
+      "sections": [
+        {
+          "number": 16,
+          "title": "Love Maths - Essentials Project",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "Displaying The Question and Getting The Answer",
+              "challenges": [
+                "Displaying The Addition Question",
+                "Calculating The Correct Answer",
+                "Checking The Answer",
+                "Updating The Scores"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "33",
+      "title": "Love Maths - Essentials Project",
+      "boundaries": {
+        "start_section": "Love Maths - Essentials Project",
+        "start_lesson": "Multiplication and Subtraction Questions",
+        "end_section": "Love Maths - Essentials Project",
+        "end_lesson": "Module Conclusion"
+      },
+      "sections": [
+        {
+          "number": 16,
+          "title": "Love Maths - Essentials Project",
+          "lessons": [
+            {
+              "number": 5,
+              "title": "Multiplication and Subtraction Questions",
+              "challenges": [
+                "The Multiplication Game",
+                "The Subtraction Game"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "Tidying Up",
+              "challenges": [
+                "A Few Last Things..."
+              ]
+            },
+            {
+              "number": 7,
+              "title": "The Challenge",
+              "challenges": [
+                "Challenge Introduction",
+                "Division Game Challenge"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "Module Conclusion",
+              "challenges": [
+                "Conclusion",
+                "Module Recap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "34",
+      "title": "AI Pair Programming 2",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "Ideation",
+        "end_section": "AI Pair Programming 2",
+        "end_lesson": "Development"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Ideation",
+              "challenges": [
+                "What we're going to build",
+                "Challenge: Creating our user stories"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Development",
+              "challenges": [
+                "Challenge: Building the site structure",
+                "Using Copilot with JavaScript",
+                "Using the @workspace tag",
+                "Challenge: Add typing accuracy feedback",
+                "Debugging with Copilot",
+                "Challenge: Going beyond the basics"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "35",
+      "title": "AI Pair Programming 2",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "Development",
+        "end_section": "AI Pair Programming 2",
+        "end_lesson": "Retrospective"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 2,
+              "title": "Development",
+              "challenges": [
+                "Challenge: Building the site structure",
+                "Using Copilot with JavaScript",
+                "Using the @workspace tag",
+                "Challenge: Add typing accuracy feedback",
+                "Debugging with Copilot",
+                "Challenge: Going beyond the basics"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Retrospective",
+              "challenges": [
+                "Challenge: In retrospect…",
+                "Quiz",
+                "Concluding thoughts"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "36",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "37",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "38",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "39",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "40",
+      "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+      "boundaries": {
+        "start_section": "AI Pair Programming 2",
+        "start_lesson": "End of module feedback",
+        "end_section": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+        "end_lesson": "Hackathon 1"
+      },
+      "sections": [
+        {
+          "number": 17,
+          "title": "AI Pair Programming 2",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "title": "Hackathon 1: Front-end with HTML, CSS & JavaScript",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Hackathon 1",
+              "challenges": [
+                "Overview and outcomes"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

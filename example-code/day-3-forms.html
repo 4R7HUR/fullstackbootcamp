@@ -1,0 +1,219 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Getting to Know You - GET Parameters</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <div class="container py-5">
+
+        <h1 class="mb-4">Getting to Know You</h1>
+
+        <!-- START: Explanation -->
+
+        <div class="alert alert-info">
+            <h2 class="h5">How this page works</h2>
+
+            <p class="mb-0">
+                This page does not use server-side scripting to process
+                POST data or save responses to a database. Instead, the
+                form submits its answers using GET parameters, adding
+                them to the URL. JavaScript reads these parameters when
+                the page reloads and displays the submitted answers
+                in a table.
+            </p>
+        </div>
+
+        <!-- STOP: Explanation -->
+
+
+        <!-- START: Output container -->
+
+        <div id="output"></div>
+
+        <!-- STOP: Output container -->
+
+    </div>
+
+    <script>
+        // Variables
+        const params = new URLSearchParams(window.location.search);
+        const output = document.getElementById("output");
+
+        // Ready block
+        if (params.has("vegetable")) {
+
+            // Display submitted answers
+            output.innerHTML = `
+                <div class="alert alert-success">
+                    Thank you for answering the questions!
+                </div>
+
+                <h2 class="mb-3">Your Answers</h2>
+
+                <table class="table table-bordered table-striped bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Question</th>
+                            <th>Answer</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Favourite vegetable</td>
+                            <td id="vegetable_answer"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Languages you can count to 10 in</td>
+                            <td id="languages_answer"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- START: Student challenge -->
+
+                <div class="alert alert-warning mt-4">
+                    <h2 class="h5">Challenge</h2>
+
+                    <p>
+                        To demonstrate your understanding, see if you manipulate
+                        the Answer column above so a vegetable that is not 
+                        currently listed in the dropdown menu appears. There are 
+                        at least 2 ways this can be achieved.
+                    </p>
+
+                    <p class="mb-0">
+                        Once you've made your change, take a screenshot
+                        of your updated page and share it in the
+                        <strong>group chat in Microsoft Teams</strong>.
+                    </p>
+                </div>
+
+                <!-- STOP: Student challenge -->
+
+                <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="reset_button">
+                    Reset Page
+                </button>
+            `;
+
+            // Insert answers safely
+            document.getElementById("vegetable_answer").textContent =
+                params.get("vegetable");
+
+            document.getElementById("languages_answer").textContent =
+                params.get("languages");
+
+            // Reset the page and remove GET parameters
+            document.getElementById("reset_button").addEventListener(
+                "click",
+                function () {
+                    window.location.href = window.location.pathname;
+                }
+            );
+
+        } else {
+
+            // Display the form
+            output.innerHTML = `
+                <p class="text-secondary">
+                    Tell us a little about yourself.
+                </p>
+
+                <form method="GET">
+
+                    <div class="mb-4">
+                        <label for="vegetable" class="form-label fw-bold">
+                            1. What is your favourite vegetable?
+                        </label>
+
+                        <select
+                            class="form-select"
+                            id="vegetable"
+                            name="vegetable"
+                            required>
+
+                            <option value="">
+                                Choose your favourite vegetable
+                            </option>
+
+                            <option value="Artichoke">Artichoke</option>
+                            <option value="Aubergine">Aubergine (Eggplant)</option>
+                            <option value="Bamboo shoots">Bamboo shoots</option>
+                            <option value="Bitter melon">Bitter melon</option>
+                            <option value="Broccoli">Broccoli</option>
+                            <option value="Cassava">Cassava</option>
+                            <option value="Carrot">Carrot</option>
+                            <option value="Chayote">Chayote</option>
+                            <option value="Chilli pepper">Chilli pepper</option>
+                            <option value="Chinese cabbage">Chinese cabbage (Napa cabbage)</option>
+                            <option value="Collard greens">Collard greens</option>
+                            <option value="Daikon">Daikon radish</option>
+                            <option value="Edamame">Edamame (young soybeans)</option>
+                            <option value="Okra">Okra (Lady's fingers)</option>
+                            <option value="Pak choi">Pak choi (Bok choy)</option>
+                            <option value="Parsnip">Parsnip</option>
+                            <option value="Peas">Peas</option>
+                            <option value="Plantain">Plantain</option>
+                            <option value="Potato">Potato</option>
+                            <option value="Pumpkin">Pumpkin</option>
+                            <option value="Purple yam">Purple yam (Ube)</option>
+                            <option value="Radish">Radish</option>
+                            <option value="Samphire">Samphire</option>
+                            <option value="Spinach">Spinach</option>
+                            <option value="Sweetcorn">Sweetcorn</option>
+                            <option value="Sweet potato">Sweet potato</option>
+                            <option value="Taro">Taro</option>
+                            <option value="Water spinach">Water spinach (Kangkong)</option>
+                            <option value="Yardlong beans">Yardlong beans</option>
+                            <option value="Yam">Yam</option>
+                            <option value="Other">Other</option>
+
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="languages" class="form-label fw-bold">
+                            2. How many languages can you count to 10 in?
+                        </label>
+
+                        <input
+                            type="number"
+                            class="form-control"
+                            id="languages"
+                            name="languages"
+                            min="1"
+                            max="100"
+                            required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        Submit Answers
+                    </button>
+
+                    <button type="reset" class="btn btn-outline-secondary ms-2">
+                        Clear Answers
+                    </button>
+
+                </form>
+            `;
+        }
+    </script>
+
+</body>
+</html>

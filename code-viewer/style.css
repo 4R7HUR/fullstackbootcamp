@@ -1,0 +1,82 @@
+/* START: Page layout */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* END: Page layout */
+
+
+/* START: Banner */
+
+.page-banner {
+    flex-shrink: 0;
+    z-index: 1000;
+}
+
+/* END: Banner */
+
+
+/* START: Main columns */
+
+.page-content {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.content-column {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    overflow-y: auto;
+}
+
+/* END: Main columns */
+
+
+/* START: Footer */
+
+.page-footer {
+    flex-shrink: 0;
+    z-index: 1000;
+}
+
+/* END: Footer */
+
+
+
+/* START: List spacing */
+
+.example-code ul,
+.example-code ol {
+    padding-left: 2em;
+}
+
+/* END: List spacing */
+
+/* START: Code window */
+
+.code-window {
+    margin: 0;
+    min-height: 100%;
+    border-radius: 0;
+    overflow: auto;
+}
+
+/* STOP: Code window */
+
+.reset{color: black,!important;}
+
+#teaching_point_text {
+    white-space: pre-line;
+}

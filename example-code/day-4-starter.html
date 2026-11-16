@@ -1,0 +1,228 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML Table Starter Activity</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+        /* ==================================================
+           START: EASY SETTINGS
+           ================================================== */
+
+        :root {
+            /* Size of numbers inside table cells */
+            --cell-number-size: 1.25rem;
+
+            /* Size of large numbers below tables */
+            --table-number-size: 6rem;
+        }
+
+        /* ==================================================
+           STOP: EASY SETTINGS
+           ================================================== */
+
+
+        /* ==================================================
+           START: SQUARE NUMBER TABLES
+           ================================================== */
+
+        .number-table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        .number-table td {
+            width: 16.666%;
+            aspect-ratio: 1 / 1;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #333;
+            padding: 0;
+            font-size: var(--cell-number-size);
+        }
+
+        /* ==================================================
+           STOP: SQUARE NUMBER TABLES
+           ================================================== */
+
+
+        /* ==================================================
+           START: LARGE NUMBERS BELOW TABLES
+           ================================================== */
+
+        .table-number {
+            font-size: var(--table-number-size);
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        /* ==================================================
+           STOP: LARGE NUMBERS BELOW TABLES
+           ================================================== */
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+
+<!-- START: INSTRUCTIONS -->
+<div class="row mb-4">
+    <div class="col bg-primary text-white p-4 rounded">
+
+        <h2 class="mb-4">HTML Table Starter Activity</h2>
+
+        <div class="fs-4">
+
+            <p>
+                Look at the three tables below. Table 1 shows the required
+                number sequence, reading from left to right and top to bottom.
+            </p>
+
+            <p>
+                Tables 2 and 3 display the same numbers in different orders.
+            </p>
+
+            <ol class="mb-0">
+                <li class="mb-3">
+                    Which table would take the most work to correct so that
+                    it matches Table 1?
+                </li>
+                <li class="mb-3">
+                    Explain why it would take more work to fix.
+                </li>
+                <li>
+                    Describe how the numbers in that table would need to be
+                    rearranged to match Table 1.
+                </li>
+            </ol>
+
+        </div>
+
+    </div>
+</div>
+<!-- STOP: INSTRUCTIONS -->
+
+
+
+        <!-- START: THREE TABLES -->
+        <div class="row g-4">
+
+            <!-- ==========================================
+                 TABLE 1: STANDARD ORDER
+                 Left to right, top to bottom
+                 ========================================== -->
+
+            <div class="col-12 col-md-4">
+
+                <div class="text-center text-success display-1 mb-2">
+                    ✓
+                </div>
+
+                <table class="number-table">
+                    <tbody>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                        <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+                        <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                        <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+                        <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+                        <tr><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td></tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <!-- ==========================================
+                 TABLE 2: REVERSED ROWS
+                 Bottom row contains 1-6
+                 ========================================== -->
+
+            <div class="col-12 col-md-4">
+
+                <div class="text-center text-danger display-1 mb-2">
+                    ✗
+                </div>
+
+                <table class="number-table">
+                    <tbody>
+                        <tr><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td></tr>
+                        <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr>
+                        <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+                        <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                        <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+                        <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+            <!-- ==========================================
+                 TABLE 3: TOP TO BOTTOM, COLUMN BY COLUMN
+                 First column contains 1-6
+                 ========================================== -->
+
+            <div class="col-12 col-md-4">
+
+                <div class="text-center text-danger display-1 mb-2">
+                    ✗
+                </div>
+
+                <table class="number-table">
+                    <tbody>
+                        <tr><td>1</td><td>7</td><td>13</td><td>19</td><td>25</td><td>31</td></tr>
+                        <tr><td>2</td><td>8</td><td>14</td><td>20</td><td>26</td><td>32</td></tr>
+                        <tr><td>3</td><td>9</td><td>15</td><td>21</td><td>27</td><td>33</td></tr>
+                        <tr><td>4</td><td>10</td><td>16</td><td>22</td><td>28</td><td>34</td></tr>
+                        <tr><td>5</td><td>11</td><td>17</td><td>23</td><td>29</td><td>35</td></tr>
+                        <tr><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td></tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+        <!-- STOP: THREE TABLES -->
+
+
+        <!-- START: NUMBERS BELOW TABLES -->
+        <div class="row g-4 mt-2">
+
+            <div class="col-12 col-md-4 text-center table-number">
+                1
+            </div>
+
+            <div class="col-12 col-md-4 text-center table-number">
+                2
+            </div>
+
+            <div class="col-12 col-md-4 text-center table-number">
+                3
+            </div>
+
+        </div>
+        <!-- STOP: NUMBERS BELOW TABLES -->
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript CDN -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>

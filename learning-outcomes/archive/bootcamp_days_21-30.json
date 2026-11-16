@@ -1,0 +1,494 @@
+{
+  "days": [
+    {
+      "day": "21",
+      "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+      "boundaries": {
+        "start_section": "AI Pair Programming 1",
+        "start_lesson": "End of module feedback",
+        "end_section": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+        "end_lesson": "Individual Formative Assignment"
+      },
+      "sections": [
+        {
+          "number": 13,
+          "title": "AI Pair Programming 1",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Individual Formative Assignment",
+              "challenges": [
+                "Portfolio Project"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "22",
+      "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+      "boundaries": {
+        "start_section": "AI Pair Programming 1",
+        "start_lesson": "End of module feedback",
+        "end_section": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+        "end_lesson": "Individual Formative Assignment"
+      },
+      "sections": [
+        {
+          "number": 13,
+          "title": "AI Pair Programming 1",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Individual Formative Assignment",
+              "challenges": [
+                "Portfolio Project"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "23",
+      "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+      "boundaries": {
+        "start_section": "AI Pair Programming 1",
+        "start_lesson": "End of module feedback",
+        "end_section": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+        "end_lesson": "Individual Formative Assignment"
+      },
+      "sections": [
+        {
+          "number": 13,
+          "title": "AI Pair Programming 1",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Individual Formative Assignment",
+              "challenges": [
+                "Portfolio Project"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "24",
+      "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+      "boundaries": {
+        "start_section": "AI Pair Programming 1",
+        "start_lesson": "End of module feedback",
+        "end_section": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+        "end_lesson": "Individual Formative Assignment"
+      },
+      "sections": [
+        {
+          "number": 13,
+          "title": "AI Pair Programming 1",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Individual Formative Assignment",
+              "challenges": [
+                "Portfolio Project"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "25",
+      "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+      "boundaries": {
+        "start_section": "AI Pair Programming 1",
+        "start_lesson": "End of module feedback",
+        "end_section": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+        "end_lesson": "Individual Formative Assignment"
+      },
+      "sections": [
+        {
+          "number": 13,
+          "title": "AI Pair Programming 1",
+          "lessons": [
+            {
+              "number": 4,
+              "title": "End of module feedback",
+              "challenges": [
+                "End of module feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "title": "Individual Formative Assignment: HTML, CSS, Bootstrap",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Individual Formative Assignment",
+              "challenges": [
+                "Portfolio Project"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "26",
+      "title": "JavaScript Essentials",
+      "boundaries": {
+        "start_section": "JavaScript Essentials",
+        "start_lesson": "Module Introduction",
+        "end_section": "JavaScript Essentials",
+        "end_lesson": "JavaScript data types part 2"
+      },
+      "sections": [
+        {
+          "number": 15,
+          "title": "JavaScript Essentials",
+          "lessons": [
+            {
+              "number": 1,
+              "title": "Module Introduction",
+              "challenges": [
+                "Welcome",
+                "Introducing the lesson format"
+              ]
+            },
+            {
+              "number": 2,
+              "title": "Hello JavaScript",
+              "challenges": [
+                "Hello JavaScript",
+                "Comments & commenting out code",
+                "Syntax & indentation"
+              ]
+            },
+            {
+              "number": 3,
+              "title": "Knowledge Checkpoint 1",
+              "challenges": [
+                "Knowledge Checkpoint 1"
+              ]
+            },
+            {
+              "number": 4,
+              "title": "JavaScript variables",
+              "challenges": [
+                "Declaring variables in JavaScript",
+                "The let and const Keywords",
+                "Common mistakes and the importance of debugging"
+              ]
+            },
+            {
+              "number": 5,
+              "title": "JavaScript data types part 1",
+              "challenges": [
+                "Introduction to JavaScript data types: Number, String and Boolean",
+                "Strings & concatenation",
+                "Template literals",
+                "Introduction to JavaScript properties and methods",
+                "Using string methods",
+                "Indices and positioning methods"
+              ]
+            },
+            {
+              "number": 6,
+              "title": "JavaScript data types part 2",
+              "challenges": [
+                "Number",
+                "Basic math with arithmetic operators",
+                "Booleans and flipping bangs!",
+                "null and undefined",
+                "Type coercion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "27",
+      "title": "JavaScript Essentials",
+      "boundaries": {
+        "start_section": "JavaScript Essentials",
+        "start_lesson": "JavaScript data structures & methods",
+        "end_section": "JavaScript Essentials",
+        "end_lesson": "JavaScript functions"
+      },
+      "sections": [
+        {
+          "number": 15,
+          "title": "JavaScript Essentials",
+          "lessons": [
+            {
+              "number": 7,
+              "title": "JavaScript data structures & methods",
+              "challenges": [
+                "Arrays and array indexing",
+                "Objects",
+                "Nested data structures",
+                "Array properties and methods",
+                "Creating methods in your objects",
+                "Math methods",
+                "Optional arguments in methods",
+                "Data structures: End of lesson challenge"
+              ]
+            },
+            {
+              "number": 8,
+              "title": "Knowledge Checkpoint 2",
+              "challenges": [
+                "Knowledge Checkpoint 2"
+              ]
+            },
+            {
+              "number": 9,
+              "title": "JavaScript functions",
+              "challenges": [
+                "Introduction to functions",
+                "Defining and calling functions in JavaScript",
+                "Functions: Taking parameters",
+                "Returning results from functions",
+                "Variable scope in JavaScript: Part 1",
+                "How to approach writing functions in JavaScript",
+                "Functions: End of lesson challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "28",
+      "title": "JavaScript Essentials",
+      "boundaries": {
+        "start_section": "JavaScript Essentials",
+        "start_lesson": "JavaScript operators and flow control",
+        "end_section": "JavaScript Essentials",
+        "end_lesson": "More advanced JavaScript concepts"
+      },
+      "sections": [
+        {
+          "number": 15,
+          "title": "JavaScript Essentials",
+          "lessons": [
+            {
+              "number": 10,
+              "title": "JavaScript operators and flow control",
+              "challenges": [
+                "Loose equality vs. strict equality",
+                "if statements",
+                "Truthy falsy",
+                "if... else statements",
+                "Comparison operators",
+                "Determining truth with logical operators",
+                "Checking another condition with else if",
+                "Nested if… else statements",
+                "Variable scope in JavaScript - part 2",
+                "switch statements",
+                "Using JavaScript Tutor to debug your code"
+              ]
+            },
+            {
+              "number": 11,
+              "title": "JavaScript iteration",
+              "challenges": [
+                "Incrementing & decrementing operators",
+                "while loops",
+                "for loops",
+                "Nested iteration",
+                "break & continue",
+                "Iterating data structures: Arrays",
+                "Iterating data structures: Objects",
+                "Iteration: End of lesson challenge"
+              ]
+            },
+            {
+              "number": 12,
+              "title": "Knowledge Checkpoint 3",
+              "challenges": [
+                "Knowledge Checkpoint 3"
+              ]
+            },
+            {
+              "number": 13,
+              "title": "More advanced JavaScript concepts",
+              "challenges": [
+                "Ternary expressions",
+                "Arrow functions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "29",
+      "title": "JavaScript Essentials",
+      "boundaries": {
+        "start_section": "JavaScript Essentials",
+        "start_lesson": "Introduction to JavaScript in the browser",
+        "end_section": "JavaScript Essentials",
+        "end_lesson": "Debugging with DevTools"
+      },
+      "sections": [
+        {
+          "number": 15,
+          "title": "JavaScript Essentials",
+          "lessons": [
+            {
+              "number": 15,
+              "title": "Introduction to JavaScript in the browser",
+              "challenges": [
+                "JavaScript and the browser",
+                "Hello DevTools console!",
+                "The script element",
+                "window, document and body"
+              ]
+            },
+            {
+              "number": 16,
+              "title": "Working with the elements",
+              "challenges": [
+                "Getting elements by id",
+                "Changing HTML content",
+                "Changing styling",
+                "Accessing and changing the classes of an element",
+                "Getting and setting HTML attributes",
+                "Getting elements by class or tag name",
+                "Making queries with selectors",
+                "Navigating DOM relationships",
+                "Adding and removing elements",
+                "Working with the elements: End of lesson challenge"
+              ]
+            },
+            {
+              "number": 17,
+              "title": "Debugging with DevTools",
+              "challenges": [
+                "Debugging JavaScript in the browser - Part 1",
+                "Debugging JavaScript in the browser - Part 2",
+                "Debugging with DevTools: End of lesson challenge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "30",
+      "title": "JavaScript Essentials",
+      "boundaries": {
+        "start_section": "JavaScript Essentials",
+        "start_lesson": "Event listeners",
+        "end_section": "JavaScript Essentials",
+        "end_lesson": "End of Module Knowledge Checkpoint"
+      },
+      "sections": [
+        {
+          "number": 15,
+          "title": "JavaScript Essentials",
+          "lessons": [
+            {
+              "number": 18,
+              "title": "Event listeners",
+              "challenges": [
+                "Introduction to events in JavaScript",
+                "Adding event listeners",
+                "Adding event listeners - another syntax",
+                "Accessing the event",
+                "Looping with listeners",
+                "Keyboard events",
+                "More events",
+                "Event listeners: End of lesson challenge"
+              ]
+            },
+            {
+              "number": 19,
+              "title": "Working with forms",
+              "challenges": [
+                "Getting form data",
+                "Prepopulating form fields",
+                "Validating form data",
+                "Form submission",
+                "Working with forms: End of lesson challenge"
+              ]
+            },
+            {
+              "number": 20,
+              "title": "Knowledge Checkpoint 5",
+              "challenges": [
+                "Knowledge Checkpoint 5"
+              ]
+            },
+            {
+              "number": 21,
+              "title": "End of Module Knowledge Checkpoint",
+              "challenges": [
+                "End of Module Knowledge Checkpoint"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
