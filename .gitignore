@@ -9,3 +9,9 @@ venv/
 .DS_Store
 
 .python-version
+
+# Django
+db.sqlite3
+
+# Environment variables
+.env
