@@ -9,7 +9,7 @@ MAX_DAYS = 80
 
 # Views
 def home(request):
-    return HttpResponse("Hello from Django!!")
+    return render(request, 'index.html')
 
 
 def about(request):
